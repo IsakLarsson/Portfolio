@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Background from "../../images/mountains-compressed.jpg";
+import Background from "../../images/BGJPEG.jpg";
 import Arrowdown from "../../images/Arrow down.svg";
 import {
   HeroContainer,
@@ -22,12 +22,13 @@ export const HeroSection = () => {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer className="heroContainer">
       <HeroBG>
         <ImageBG src={Background} />
-        <ImageOverlayRadial />
+        {/* <ImageOverlayRadial /> */}
       </HeroBG>
-      <HeroContent>
+
+      <HeroContent className="heroContent">
         <HeroH1>ISAK LARSSON</HeroH1>
         <HeroP>
           An aspiring developer who likes to engage in both frontend and backend

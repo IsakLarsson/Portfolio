@@ -6,10 +6,10 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 100vh;
   z-index: 1;
 
-  &:before {
+  /* &:before {
     content: "";
     position: absolute;
     top: 0;
@@ -23,7 +23,7 @@ export const HeroContainer = styled.div`
       ),
       linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, transparent 50%);
     z-index: 2;
-  }
+  } */
 `;
 
 export const HeroBG = styled.div`
@@ -45,36 +45,36 @@ export const ImageBG = styled.img`
   background: #1f1f1f;
 `;
 
-export const ImageOverlayRadial = styled.div`
-  background: rgb(26, 26, 26);
-  background: -moz-radial-gradient(
-    circle,
-    rgba(26, 26, 26, 0.938813025210084) 0%,
-    rgba(23, 23, 23, 0.9164040616246498) 10%,
-    rgba(0, 0, 0, 0.4290091036414566) 100%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(26, 26, 26, 0.938813025210084) 0%,
-    rgba(23, 23, 23, 0.9164040616246498) 10%,
-    rgba(0, 0, 0, 0.4290091036414566) 100%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(26, 26, 26, 0.938813025210084) 0%,
-    rgba(23, 23, 23, 0.9164040616246498) 10%,
-    rgba(0, 0, 0, 0.4290091036414566) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1a1a",endColorstr="#000000",GradientType=1);
+// export const ImageOverlayRadial = styled.div`
+//   background: rgb(26, 26, 26);
+//   background: -moz-radial-gradient(
+//     circle,
+//     rgba(26, 26, 26, 0.938813025210084) 0%,
+//     rgba(23, 23, 23, 0.9164040616246498) 10%,
+//     rgba(0, 0, 0, 0.4290091036414566) 100%
+//   );
+//   background: -webkit-radial-gradient(
+//     circle,
+//     rgba(26, 26, 26, 0.938813025210084) 0%,
+//     rgba(23, 23, 23, 0.9164040616246498) 10%,
+//     rgba(0, 0, 0, 0.4290091036414566) 100%
+//   );
+//   background: radial-gradient(
+//     circle,
+//     rgba(26, 26, 26, 0.938813025210084) 0%,
+//     rgba(23, 23, 23, 0.9164040616246498) 10%,
+//     rgba(0, 0, 0, 0.4290091036414566) 100%
+//   );
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a1a1a",endColorstr="#000000",GradientType=1);
 
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-`;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+// `;
 
 export const HeroContent = styled.div`
   z-index: 3;

@@ -12,8 +12,9 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  bottom: 0;
+  top: 0;
   z-index: 10;
+
   @media screen and (max-width: 768px) {
     display: none;
   }
