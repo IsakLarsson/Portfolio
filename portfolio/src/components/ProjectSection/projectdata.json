@@ -6,8 +6,8 @@
   },
   "Portfolio": {
     "heading": "This portfolio",
-    "desc": "This portfolio was created both as an opportunity to challenge myself and as a fun project to work on while I learn new things, especially to sharpen my CSS skills. The portfolio was prototyped in Figma and developed using ReactJS and CSS. This portfolio will also be kept up to date with future projects and new design updates",
-    "resources": ["ReactJS", "CSS3", "Figma"]
+    "desc": "This portfolio was created both as an opportunity to challenge myself and as a fun project to work on while I learn new things, especially to sharpen my CSS skills. The portfolio was prototyped in Figma and developed using ReactJS, CSS and a dash of Material UI. This portfolio will also be kept up to date with future projects and new design updates",
+    "resources": ["ReactJS", "CSS3", "Figma", "Material UI"]
   },
   "AntiTD": {
     "heading": "Anti Tower Defense",
@@ -16,7 +16,7 @@
   },
   "oldPortfolio": {
     "heading": "My old portfolio",
-    "desc": "The first portfolio i ever made, this was built using ReactJS as well as Material UI. However it had some responsivenses issues and I felt that it needed both a design and functionality update to showcase both my design and development improvements since then",
+    "desc": "The first portfolio I ever made, this was built using ReactJS as well as Material UI. However it had some responsivenses issues and I felt that it needed both a design and functionality update to showcase both my design and development improvements since then",
     "resources": ["ReactJS", "MaterialUI"]
   }
 }

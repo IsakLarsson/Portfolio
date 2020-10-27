@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "aos": "^2.3.4",
     "devicon": "^2.2.0",
+    "emailjs-com": "^2.6.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",

@@ -1,0 +1,13 @@
+.footerSection {
+  min-height: 10vh;
+  background-color: #36383c;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
