@@ -26,7 +26,7 @@ export const About = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <section className="aboutPage">
+    <section className="aboutPage" id="AboutPage">
       <div data-aos="fade-up" className="aboutHeaderBig" id="bigheader">
         <h1>First, a short introduction</h1>
       </div>

@@ -1,0 +1,31 @@
+.buttonwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.introduce {
+  color: #00c896;
+  font-weight: 500;
+  transition: ease-out 0.2s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .introduce {
+    font-size: 25px;
+  }
+}
+.introduce:hover {
+  transform: scale(1.1);
+}
+.introduce:hover + .arrow {
+  transform: scale(1.1);
+  transform: translateY(20px);
+}
+
+.arrow {
+  text-align: center;
+  transition: ease-out 0.2s;
+  margin-top: -20px;
+}

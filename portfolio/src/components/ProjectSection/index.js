@@ -11,7 +11,7 @@ export const Projects = () => {
   const antitdImg = require("../../images/antitd.png");
   const oldportfolioImg = require("../../images/oldportfolio.png");
   return (
-    <section className="projectSection">
+    <section className="projectSection" id="ProjectsPage">
       <div data-aos="fade-up" className="projectsHeader">
         <h1>These are some of my projects</h1>
       </div>

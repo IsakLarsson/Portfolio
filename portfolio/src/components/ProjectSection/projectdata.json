@@ -6,7 +6,7 @@
   },
   "Portfolio": {
     "heading": "This portfolio",
-    "desc": "This portfolio was created both as an opportunity to challenge myself and as a fun project to work on while I learn new things, especially to sharpen my CSS skills. The portfolio was prototyped in Figma and developed using ReactJS, CSS and a dash of Material UI. This portfolio will also be kept up to date with future projects and new design updates",
+    "desc": "This portfolio was created both as an opportunity to challenge myself and as a fun project to work on while I learn new things, especially to sharpen my CSS skills. The portfolio was prototyped in Figma and developed using ReactJS, CSS and a dash of Material UI. This portfolio will also be kept up to date with future projects and new design updates. It is also meant to be fully responsive, try it on your different devices!",
     "resources": ["ReactJS", "CSS3", "Figma", "Material UI"]
   },
   "AntiTD": {

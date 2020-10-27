@@ -4,6 +4,7 @@ import { TextField, makeStyles, Button } from "@material-ui/core";
 import Plane from "../../images/icons/plane.svg";
 import Uparrows from "../../images/icons/uparrows.svg";
 import emailjs from "emailjs-com";
+import { Link } from "react-scroll";
 
 const useStyles = makeStyles({
   textField: {
@@ -81,7 +82,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="contactSection">
+    <section className="contactSection" id="Contact">
       <div data-aos="fade-up" className="contactHeader">
         <h1>Now that you've gotten to know me</h1>
         <div className="contactP">
@@ -145,7 +146,9 @@ const Contact = () => {
         </Button>
       </div>
       <div className="scrollArrows">
-        <img src={Uparrows} />
+        <Link to="landingPage" smooth>
+          <img src={Uparrows} />
+        </Link>
       </div>
     </section>
   );

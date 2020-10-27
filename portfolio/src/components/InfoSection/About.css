@@ -1,6 +1,7 @@
 .aboutPage {
   background-color: #1a1a1a;
   min-height: 100vh;
+  margin-top: 88px;
 }
 
 .aboutHeaderBig {
@@ -10,7 +11,7 @@
 }
 
 .aboutHeaderBig h1 {
-  padding-top: 7rem;
+  padding-top: 10rem;
   margin: 0px;
   font-size: 36px;
   font-weight: 600;
@@ -45,7 +46,8 @@
 .aboutText {
   margin: 1rem 0;
   padding: 0;
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 1.3;
   font-weight: 400;
   color: #fff;
 }

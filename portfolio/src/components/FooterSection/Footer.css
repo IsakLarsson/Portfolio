@@ -4,10 +4,36 @@
 }
 
 .footerContainer {
+  padding: 20px 0;
+}
+
+.socials {
   display: flex;
   justify-content: center;
 }
-h1 {
-  margin: 0;
-  padding: 0;
+
+a {
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.socialLink img {
+  width: 50px;
+  height: auto;
+  transition: ease-in-out 0.2s;
+}
+
+.socialLink img:hover {
+  width: 50px;
+  height: auto;
+  transform: scale(1.1);
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 0;
 }

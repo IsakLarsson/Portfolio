@@ -13,6 +13,8 @@ import {
   HeroBtnWrapper,
 } from "./HeroElements";
 import { Button, Arrow } from "../ButtonElements";
+import { Link } from "react-scroll";
+import "./Hero.css";
 
 export const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -22,28 +24,40 @@ export const HeroSection = () => {
   };
 
   return (
-    <HeroContainer className="heroContainer">
-      <HeroBG>
-        <ImageBG src={Background} />
-        {/* <ImageOverlayRadial /> */}
-      </HeroBG>
+    <section className="landingPage">
+      <HeroContainer className="heroContainer" id="landingPage">
+        <HeroBG>
+          <ImageBG src={Background} />
+          {/* <ImageOverlayRadial /> */}
+        </HeroBG>
 
-      <HeroContent className="heroContent">
-        <HeroH1>ISAK LARSSON</HeroH1>
-        <HeroP>
-          An aspiring developer who likes to engage in both frontend and backend
-          development,{" "}
-        </HeroP>
-        <HeroP>allow me to </HeroP>
-        <HeroBtnWrapper id="buttonwrapper">
+        <HeroContent className="heroContent">
+          <HeroH1>ISAK LARSSON</HeroH1>
+          <HeroP>
+            An aspiring developer who likes to engage in both frontend and
+            backend development,{" "}
+          </HeroP>
+          <HeroP>allow me to </HeroP>
+          <div className="buttonWrapper">
+            <Link to="AboutPage" smooth className="introduce">
+              <h1 className="introduce">Introduce myself!</h1>
+            </Link>
+            <div className="arrow">
+              <Link to="AboutPage" smooth>
+                <img src={Arrowdown} />
+              </Link>
+            </div>
+          </div>
+          {/* <HeroBtnWrapper id="buttonwrapper">
           <Button to="about" primary={true}>
             Introduce myself!{" "}
           </Button>
           <Arrow onMouseEnter={hover} onMouseLeave={hover}>
             <img src={Arrowdown} />
           </Arrow>
-        </HeroBtnWrapper>
-      </HeroContent>
-    </HeroContainer>
+        </HeroBtnWrapper> */}
+        </HeroContent>
+      </HeroContainer>
+    </section>
   );
 };

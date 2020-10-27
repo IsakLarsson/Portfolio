@@ -6,6 +6,8 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin-top: -2px;
+  margin-bottom: -1px;
 }
 .contactHeader {
   display: flex;
@@ -56,4 +58,10 @@ h3 {
 
 .scrollArrows {
   margin: 8rem 0 2rem 0;
+  transition: ease-in-out 0.2s;
+}
+
+.scrollArrows:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
 }

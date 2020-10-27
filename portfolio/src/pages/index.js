@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { HeroSection } from "../components/HeroSection";
-import InfoSection from "../components/InfoSection/index2";
 import Navbar from "../components/Navbar";
 import About from "../components/InfoSection/index.js";
 import Projects from "../components/ProjectSection/index.js";
@@ -9,8 +8,8 @@ import Footer from "../components/FooterSection";
 export const Home = () => {
   return (
     <div>
-      <HeroSection />
       <Navbar />
+      <HeroSection />
       <About />
       <Projects />
       <Contact />
