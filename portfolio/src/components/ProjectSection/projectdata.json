@@ -1,0 +1,22 @@
+{
+  "Alumniweb": {
+    "heading": "Alumni Web",
+    "desc": "A course project for Umeå Institute of Design  where the alumni section wanted inspiration for their new Alumni Network. Me and 3 other group-members came up with a mockup of the new site. The look and feel was based on their current graphical profile and the work was especially centered around designing towards brining the Umeå university “aura” to the site.",
+    "resources": ["Adobe Illustrator"]
+  },
+  "Portfolio": {
+    "heading": "This portfolio",
+    "desc": "This portfolio was created both as an opportunity to challenge myself and as a fun project to work on while I learn new things, especially to sharpen my CSS skills. The portfolio was prototyped in Figma and developed using ReactJS and CSS. This portfolio will also be kept up to date with future projects and new design updates",
+    "resources": ["ReactJS", "CSS3", "Figma"]
+  },
+  "AntiTD": {
+    "heading": "Anti Tower Defense",
+    "desc": "A game created for the course Application Developement in Java, which I and 3 other students worked on for a few weeks. It's built around the idea of a reversed tower defense game, where instead of placing towers to stop the invading forces, you instead send soldiers in order to try to get to the enemy base. The levels were built using XML and the game runs on multiple threads.",
+    "resources": ["Java", "XML"]
+  },
+  "oldPortfolio": {
+    "heading": "My old portfolio",
+    "desc": "The first portfolio i ever made, this was built using ReactJS as well as Material UI. However it had some responsivenses issues and I felt that it needed both a design and functionality update to showcase both my design and development improvements since then",
+    "resources": ["ReactJS", "MaterialUI"]
+  }
+}

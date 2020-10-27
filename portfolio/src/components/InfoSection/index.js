@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Selfie from "../../images/selfie-compressed.jpg";
 import "../InfoSection/About.css";
-import { ReactIcon } from "../SvgIcons/ReactIcon";
 import Aos from "aos";
 import "../../../node_modules/aos/dist/aos.css";
 import ReactLogo from "../../images/icons/reactlogo.svg";
@@ -17,6 +16,10 @@ import BootstrapLogo from "../../images/icons/bootstraplogo.svg";
 import JavaScriptLogo from "../../images/icons/javascriptlogo.svg";
 import SqlLogo from "../../images/icons/sqllogo.svg";
 import MaterialUI from "../../images/icons/materialuilogo.svg";
+import Illustrator from "../../images/icons/illustrator.svg";
+import XD from "../../images/icons/adobeXD.svg";
+import Figma from "../../images/icons/figma.svg";
+import Css from "../../images/icons/css3.svg";
 
 export const About = () => {
   useEffect(() => {
@@ -25,7 +28,7 @@ export const About = () => {
   return (
     <section className="aboutPage">
       <div data-aos="fade-up" className="aboutHeaderBig" id="bigheader">
-        <h1>About me</h1>
+        <h1>First, a short introduction</h1>
       </div>
       <div data-aos="fade-up" className="aboutContainer">
         <div className="imageWrapper">
@@ -89,6 +92,7 @@ export const About = () => {
               { title: "Python", img: PythonLogo },
               { title: "Java", img: JavaLogo },
               { title: "HTML5", img: HtmlLogo },
+              { title: "CSS3", img: Css },
               { title: "Botstrap", img: BootstrapLogo },
               { title: "JavaScript", img: JavaScriptLogo },
               { title: "NodeJS", img: NodeJsLogo },
@@ -96,7 +100,10 @@ export const About = () => {
               { title: "C#", img: CsharpLogo },
               { title: "MySQL", img: SqlLogo },
               { title: "MaterialUI", img: MaterialUI },
-            ].map((skill, index) => (
+              { title: "Adobe XD", img: XD },
+              { title: "Illustrator", img: Illustrator },
+              { title: "Figma", img: Figma },
+            ].map((skill) => (
               <div className="skillIcon">
                 <img src={skill.img}></img>
                 <p>{skill.title}</p>

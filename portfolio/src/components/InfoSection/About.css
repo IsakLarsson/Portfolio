@@ -1,6 +1,6 @@
 .aboutPage {
   background-color: #1a1a1a;
-  min-height: 140vh;
+  min-height: 100vh;
 }
 
 .aboutHeaderBig {
@@ -13,6 +13,7 @@
   padding-top: 7rem;
   margin: 0px;
   font-size: 36px;
+  font-weight: 600;
 }
 
 .aboutContainer {
@@ -59,8 +60,8 @@
 .imageWrapper {
   width: 250px;
   height: 435px;
-  background: red;
   overflow: hidden;
+  box-shadow: 2px 2px 10px #0f0f0f;
 }
 
 .image {
@@ -75,16 +76,30 @@
   width: 100%;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-@media screen and(max-width:768px) {
+@media screen and (max-width: 768px) {
   .traitIcons {
-    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .traitIcon img {
   width: 100%;
   height: 100%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 425px) {
+  .traitIcon {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .traitIcon img {
+    /* width: 50%;
+    height: 50%; */
+  }
 }
 
 .skillsContainer {
@@ -92,21 +107,22 @@
   margin-top: 12em;
   background-color: #4f5a61;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1.9rem 0;
   box-shadow: 2px 2px 10px #0f0f0f;
 }
 
-@media only screen and(max-width:425px) {
-  .skillsContainer {
-    width: 90%;
-  }
-}
 .skillsContainer h1 {
   color: #fff;
   margin: 10px;
   font-weight: 500;
   font-size: 30px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .skillsContainer {
+    width: 100%;
+  }
 }
 
 .skillIcons {
