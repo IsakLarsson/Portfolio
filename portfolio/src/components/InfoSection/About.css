@@ -24,11 +24,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-@media screen and(max-width:425px) {
-  .aboutContainer {
-    flex-direction: column;
-  }
-}
 
 .textContainer {
   text-align: left;
@@ -148,4 +143,10 @@
   margin: 0;
   padding: 0;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutPage {
+    margin-top: 45px;
+  }
 }
