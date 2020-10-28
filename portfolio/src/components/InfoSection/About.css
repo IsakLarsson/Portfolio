@@ -37,6 +37,11 @@
     text-align: justify;
   }
 }
+@media screen and (max-width: 375px) {
+  [class*="textContainer"] {
+    text-align: start;
+  }
+}
 
 .aboutText {
   margin: 1rem 0;
@@ -147,6 +152,6 @@
 
 @media screen and (max-width: 768px) {
   .aboutPage {
-    margin-top: 45px;
+    margin-top: 10px;
   }
 }

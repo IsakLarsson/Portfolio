@@ -10,6 +10,7 @@ export const Projects = () => {
   const portfolioImg = require("../../images/reactlogo.svg");
   const antitdImg = require("../../images/antitd.png");
   const oldportfolioImg = require("../../images/oldportfolio.png");
+  const mottagningImg = require("../../images/mottagning.png");
   return (
     <section className="projectSection" id="ProjectsPage">
       <div data-aos="fade-up" className="projectsHeader">
@@ -17,25 +18,33 @@ export const Projects = () => {
       </div>
       <div className="projectList">
         <ProjectItem
-          imagePlacement="LEFT"
-          header={projectData.Alumniweb.heading}
-          description={projectData.Alumniweb.desc}
-          resources={projectData.Alumniweb.resources}
-          img={alumniImg}
-        />
-        <ProjectItem
           imagePlacement="RIGHT"
+          header={projectData.mottagning.heading}
+          description={projectData.mottagning.desc}
+          resources={projectData.mottagning.resources}
+          img={mottagningImg}
+        />
+
+        <ProjectItem
+          imagePlacement="LEFT"
           header={projectData.Portfolio.heading}
           description={projectData.Portfolio.desc}
           resources={projectData.Portfolio.resources}
           img={portfolioImg}
         />
         <ProjectItem
-          imagePlacement="LEFT"
+          imagePlacement="RIGHT"
           header={projectData.AntiTD.heading}
           description={projectData.AntiTD.desc}
           resources={projectData.AntiTD.resources}
           img={antitdImg}
+        />
+        <ProjectItem
+          imagePlacement="LEFT"
+          header={projectData.Alumniweb.heading}
+          description={projectData.Alumniweb.desc}
+          resources={projectData.Alumniweb.resources}
+          img={alumniImg}
         />
         <ProjectItem
           imagePlacement="RIGHT"

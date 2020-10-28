@@ -1,7 +1,7 @@
 {
   "Alumniweb": {
     "heading": "Alumni Web",
-    "desc": "A course project for Umeå Institute of Design  where the alumni section wanted inspiration for their new Alumni Network. Me and 3 other group-members came up with a mockup of the new site. The look and feel was based on their current graphical profile and the work was especially centered around designing towards brining the Umeå university “aura” to the site.",
+    "desc": "A course project for Umeå Institute of Design  where the alumni section wanted inspiration for their new Alumni Network. Me and 3 other group-members came up with a mockup of different pages for the new site. The look and feel was based on their current graphical profile and the work was especially centered around designing towards brining the Umeå university “aura” to the site.",
     "resources": ["Adobe Illustrator"]
   },
   "Portfolio": {
@@ -18,5 +18,10 @@
     "heading": "My old portfolio",
     "desc": "The first portfolio I ever made, this was built using ReactJS as well as Material UI. However it had some responsivenses issues and I felt that it needed both a design and functionality update to showcase both my design and development improvements since then",
     "resources": ["ReactJS", "MaterialUI"]
+  },
+  "mottagning": {
+    "heading": "Freshman app",
+    "desc": "Every year, new students enroll in their new education programs at the university. During the first weeks of school, the older students host events and social gatherings in order to make the new students feel more welcome. In order to keep up to date with these events, me and 3 other students created an app for that purpose, aimed specifically at students enrolling in the Msc Interaction technology and design programme",
+    "resources": ["React Native", "Figma"]
   }
 }

@@ -5,6 +5,7 @@
 }
 
 .introduce {
+  font-size: 30px;
   color: #00c896;
   font-weight: 500;
   transition: ease-out 0.2s;

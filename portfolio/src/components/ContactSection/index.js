@@ -50,10 +50,12 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [emailError, setError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
 
   function sendMessage() {
     setError(false);
     setMessageError(false);
+    setMessageSent(false);
     let error = false;
 
     console.log(messageError, emailError);
@@ -69,13 +71,13 @@ const Contact = () => {
       var service_id = "my gmail";
       var template_id = "template_vyr8z8o";
       var user_id = "user_7QRMJ4JlEVSvNwdvDOMwE";
-      console.log(message);
-      emailjs.send(
-        service_id,
-        template_id,
-        { from_name: email, message: message },
-        user_id
-      );
+      // emailjs.send(
+      //   service_id,
+      //   template_id,
+      //   { from_name: email, message: message },
+      //   user_id
+      // );
+      setMessageSent(true);
     }
     setEmail("");
     setMessage("");
@@ -136,6 +138,7 @@ const Contact = () => {
             },
           }}
         ></TextField>
+
         <Button
           variant="outlined"
           className={classes.sendButton}
@@ -145,6 +148,12 @@ const Contact = () => {
           <img className="plane" src={Plane} alt=" "></img>
         </Button>
       </div>
+      {messageSent && (
+        <p data-aos="fade-up" className="mailMessage">
+          Message sent, I'll be in touch!
+        </p>
+      )}
+
       <div className="scrollArrows">
         <Link to="landingPage" smooth>
           <img src={Uparrows} />

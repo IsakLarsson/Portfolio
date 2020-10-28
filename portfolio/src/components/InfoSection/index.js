@@ -93,7 +93,7 @@ export const About = () => {
               { title: "Java", img: JavaLogo },
               { title: "HTML5", img: HtmlLogo },
               { title: "CSS3", img: Css },
-              { title: "Botstrap", img: BootstrapLogo },
+              { title: "Bootstrap", img: BootstrapLogo },
               { title: "JavaScript", img: JavaScriptLogo },
               { title: "NodeJS", img: NodeJsLogo },
               { title: "C99", img: Clogo },
