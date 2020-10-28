@@ -71,12 +71,12 @@ const Contact = () => {
       var service_id = "my gmail";
       var template_id = "template_vyr8z8o";
       var user_id = "user_7QRMJ4JlEVSvNwdvDOMwE";
-      // emailjs.send(
-      //   service_id,
-      //   template_id,
-      //   { from_name: email, message: message },
-      //   user_id
-      // );
+      emailjs.send(
+        service_id,
+        template_id,
+        { from_name: email, message: message },
+        user_id
+      );
       setMessageSent(true);
     }
     setEmail("");
