@@ -26,7 +26,7 @@
   },
   "Paradox": {
     "heading": "Employee evaluation",
-    "desc": "For this project, me and 4 friends teamed up to create an employee evaluation system for Paradox Arctic studios. The goal of our system was to increase the simplicity of evaluation and the efficiency of the data compilation, resulting in hours of time saved per employee. The system was prototyped through several testing stages and finally developed from scratch using the MERN stack. It was the biggest project I had ever worked on and it provided a great learning opportunity and a great deal of experience",
+    "desc": "For this project, me and 4 friends teamed up to create an employee evaluation system for international game dev studio Paradox Arctic. The goal of our system was to increase the simplicity of evaluation and the efficiency of the data compilation, resulting in hours of time saved per employee. The system was prototyped through several testing stages and finally developed from scratch using the MERN stack. It was a pretty big project and it provided a great learning opportunity and a great deal of experience",
     "resources": ["MongoDB", "Express", "ReactJS", "Node", "Adobe XD"]
   }
 }
