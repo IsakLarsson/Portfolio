@@ -21,7 +21,7 @@
   transform: scale(1.1);
 }
 .introduce:hover + .arrow {
-  transform: scale(1.1);
+  transform: scale(1.6);
   transform: translateY(20px);
 }
 

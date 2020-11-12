@@ -58,7 +58,6 @@ const Contact = () => {
     setMessageSent(false);
     let error = false;
 
-    console.log(messageError, emailError);
     if (email.length === 0) {
       setError(true);
       error = true;
@@ -98,12 +97,12 @@ const Contact = () => {
       <div data-aos="fade-up" className="contactForm">
         <TextField
           error={emailError}
-          label="Email"
+          label="Your email"
           id="custom-inputfield-email"
           className={classes.textField}
           variant="outlined"
           value={email}
-          helperText={emailError ? "You must enter an email adress" : ""}
+          helperText={emailError ? "Please enter an email adress" : ""}
           onChange={(e) => {
             setEmail(e.target.value);
           }}
@@ -126,11 +125,7 @@ const Contact = () => {
             setMessage(e.target.value);
           }}
           value={message}
-          helperText={
-            messageError
-              ? "Please enter a message, I don't want empty emails"
-              : ""
-          }
+          helperText={messageError ? "Please enter a message" : ""}
           InputProps={{
             style: {
               color: "#C8FCEA",
@@ -156,7 +151,7 @@ const Contact = () => {
 
       <div className="scrollArrows">
         <Link to="landingPage" smooth>
-          <img src={Uparrows} />
+          <img src={Uparrows} alt="Scroll back up" />
         </Link>
       </div>
     </section>

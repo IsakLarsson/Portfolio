@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../ProjectSection/Projects.css";
 
 import ProjectItem from "./ProjectItem";
@@ -9,14 +9,22 @@ export const Projects = () => {
   const alumniImg = require("../../images/alumnwebb.png"); //maybe ugly but the only thing that wanted to work and im tired rn so yea
   const portfolioImg = require("../../images/reactlogo.svg");
   const antitdImg = require("../../images/antitd.png");
-  const oldportfolioImg = require("../../images/oldportfolio.png");
   const mottagningImg = require("../../images/mottagning.png");
+  const paradoxImg = require("../../images/Paradox.jpg");
+
   return (
     <section className="projectSection" id="ProjectsPage">
       <div data-aos="fade-up" className="projectsHeader">
         <h1>These are some of my projects</h1>
       </div>
       <div className="projectList">
+        <ProjectItem
+          imagePlacement="LEFT"
+          header={projectData.Paradox.heading}
+          description={projectData.Paradox.desc}
+          resources={projectData.Paradox.resources}
+          img={paradoxImg}
+        />
         <ProjectItem
           imagePlacement="RIGHT"
           header={projectData.mottagning.heading}
@@ -45,13 +53,6 @@ export const Projects = () => {
           description={projectData.Alumniweb.desc}
           resources={projectData.Alumniweb.resources}
           img={alumniImg}
-        />
-        <ProjectItem
-          imagePlacement="RIGHT"
-          header={projectData.oldPortfolio.heading}
-          description={projectData.oldPortfolio.desc}
-          resources={projectData.oldPortfolio.resources}
-          img={oldportfolioImg}
         />
       </div>
     </section>

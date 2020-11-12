@@ -23,5 +23,10 @@
     "heading": "Freshman app",
     "desc": "Every year, new students enroll in their new education programs at the university. During the first weeks of school, the older students host events and social gatherings in order to make the new students feel more welcome. In order to keep up to date with these events, me and 3 other students created an app for that purpose, aimed specifically at students enrolling in the Msc Interaction technology and design programme",
     "resources": ["React Native", "Figma"]
+  },
+  "Paradox": {
+    "heading": "Employee evaluation",
+    "desc": "For this project, me and 4 friends teamed up to create an employee evaluation system for Paradox Arctic studios. The goal of our system was to increase the simplicity of evaluation and the efficiency of the data compilation, resulting in hours of time saved per employee. The system was prototyped through several testing stages and finally developed from scratch using the MERN stack. It was the biggest project I had ever worked on and it provided a great learning opportunity and a great deal of experience",
+    "resources": ["MongoDB", "Express", "ReactJS", "Node", "Adobe XD"]
   }
 }

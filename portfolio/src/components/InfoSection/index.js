@@ -32,20 +32,25 @@ export const About = () => {
       </div>
       <div data-aos="fade-up" className="aboutContainer">
         <div className="imageWrapper">
-          <img className="image" src={Selfie} />
+          <img
+            className="image"
+            src={Selfie}
+            alt="Oops, something went wrong my selfie"
+          />
         </div>
         <div className="textContainer">
           {/* <h1 className="aboutHeaderSmall" id="smallheader">
             Im Isak
           </h1> */}
           <p className="aboutText">
-            I am currently a fourth year student at the MSc Interaction
-            technology and design programme at Umeå University, Sweden.
-            Cornerstones of the programme are UX-design, interactivity and
-            accessability but also software development in a wide range of
-            different technologies. My main interests are both front-end and
-            back-end development as well as AI and UX-design. I'm always curious
-            towards new technology and I'm always ready to learn new things.
+            I am currently a fourth-year student at the MSc. Engineering:
+            Interaction technology and design programme at Umeå University,
+            Sweden. My main interests are both front-end and back-end
+            development as well as AI and UI and UX-design. I'm always striving
+            to develop my skill set as much as possible. My passion lies in
+            technology, creativity, problem-solving and my drive comes from
+            wanting to build the future. Whether that’s via design, development
+            or both, I want to be a part of it.
           </p>
           <div className="traitIcons">
             <div
@@ -54,7 +59,10 @@ export const About = () => {
               data-aos-easing="ease-out-back"
               className="traitIcon"
             >
-              <img src={require("../../images/QuickLearner.svg")} />
+              <img
+                src={require("../../images/QuickLearner.svg")}
+                alt="Quick Learner"
+              />
             </div>
             <div
               data-aos="fade-up"
@@ -62,7 +70,7 @@ export const About = () => {
               data-aos-easing="ease-out-back"
               className="traitIcon"
             >
-              <img src={require("../../images/Curious.svg")} />
+              <img src={require("../../images/Curious.svg")} alt="Curious" />
             </div>
             <div
               data-aos="fade-up"
@@ -70,7 +78,7 @@ export const About = () => {
               data-aos-easing="ease-out-back"
               className="traitIcon"
             >
-              <img src={require("../../images/Adaptive.svg")} />
+              <img src={require("../../images/Adaptive.svg")} alt="Adaptive" />
             </div>
             <div
               data-aos="fade-up"
@@ -78,7 +86,7 @@ export const About = () => {
               data-aos-easing="ease-out-back"
               className="traitIcon"
             >
-              <img src={require("../../images/Driven.svg")} />
+              <img src={require("../../images/Driven.svg")} alt="Driven" />
             </div>
           </div>
         </div>
@@ -105,7 +113,7 @@ export const About = () => {
               { title: "Figma", img: Figma },
             ].map((skill) => (
               <div className="skillIcon">
-                <img src={skill.img}></img>
+                <img src={skill.img} alt="icon missing"></img>
                 <p>{skill.title}</p>
               </div>
             ))}

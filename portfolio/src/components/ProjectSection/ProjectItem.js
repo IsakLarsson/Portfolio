@@ -33,16 +33,16 @@ function useWindowDimensions() {
 
 /**
  * Project item to be displayed individually on a page
- * @param {Header, description and image for project} props
+ * @param {Header, description image for project and image palcement -left or right} props
  */
 const ProjectItem = (props) => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   if (props.imagePlacement === "LEFT") {
     return (
       <div data-aos="fade-up" className="projectContainer">
         <div className="projectImageWrapper">
-          <img src={props.img} />
+          <img src={props.img} alt="oops, something went wrong" />
         </div>
         <div className="projectDescriptionContainer">
           <h1>{props.header}</h1>
@@ -59,7 +59,7 @@ const ProjectItem = (props) => {
     return (
       <div data-aos="fade-up" className="projectContainer">
         <div className="projectImageWrapper">
-          <img src={props.img} />
+          <img src={props.img} alt="oops, something went wrong" />
         </div>
         <div className="projectDescriptionContainer">
           <h1>{props.header}</h1>
@@ -85,7 +85,7 @@ const ProjectItem = (props) => {
           </div>
         </div>
         <div className="projectImageWrapper">
-          <img src={props.img} />
+          <img src={props.img} alt="oops, something went wrong" />
         </div>
       </div>
     );

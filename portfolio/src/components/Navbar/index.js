@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Nav,
-  NavLogo,
   NavbarContainer,
   NavItem,
   NavMenu,
@@ -38,13 +37,13 @@ const Navbar = () => {
           <div className="socials">
             <a href="https://github.com/IsakLarsson">
               <div className="socialLink">
-                <img src={Github} />
+                <img src={Github} alt="Github" />
               </div>
             </a>
 
             <a href="https://www.linkedin.com/in/isak-%C3%A5man-larsson-629330181/">
               <div className="socialLink">
-                <img src={Linkedin} />
+                <img src={Linkedin} alt="LinkedIn" />
               </div>
             </a>
           </div>

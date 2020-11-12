@@ -1,17 +1,9 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router } from "react-router-dom";
-import Home from './pages';
-
+import React from "react";
+import "./App.css";
+import Home from "./pages";
 
 function App() {
-  return (
-    <Router>
-      <Home/>
-
-    </Router>
-  );
+  return <Home />;
 }
 
 export default App;
