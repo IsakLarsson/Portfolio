@@ -38,14 +38,6 @@ export const HeroSection = () => {
               </Link>
             </div>
           </div>
-          {/* <HeroBtnWrapper id="buttonwrapper">
-          <Button to="about" primary={true}>
-            Introduce myself!{" "}
-          </Button>
-          <Arrow onMouseEnter={hover} onMouseLeave={hover}>
-            <img src={Arrowdown} />
-          </Arrow>
-        </HeroBtnWrapper> */}
         </HeroContent>
       </HeroContainer>
     </section>

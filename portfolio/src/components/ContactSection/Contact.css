@@ -1,4 +1,5 @@
 .contactSection {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 80vh;
@@ -16,7 +17,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 0 15%;
+  margin: 0 10%;
   padding: 0 0 2rem 0;
 }
 
@@ -33,6 +34,7 @@
 }
 
 .contactForm {
+  margin-bottom: 150px;
   max-width: 400px;
   display: flex;
   flex-direction: column;
@@ -57,7 +59,8 @@ h3 {
 }
 
 .scrollArrows {
-  margin: 8rem 0 2rem 0;
+  position: absolute;
+  bottom: 30px;
   transition: ease-in-out 0.2s;
 }
 
