@@ -10,6 +10,7 @@
   font-weight: 500;
   transition: ease-out 0.2s;
   cursor: pointer;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -33,4 +34,41 @@
 
 .landingPage {
   margin-bottom: -20px;
+}
+
+.rotatingText {
+  color: #00c896 !important;
+  font-size: 1.9rem;
+  max-width: 500px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .rotatingText {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .rotatingText {
+    font-size: 1.2rem;
+  }
+}
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+  color: #fff;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

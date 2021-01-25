@@ -12,25 +12,36 @@ import {
 import { Link } from "react-scroll";
 import "./Hero.css";
 
+var ReactRotatingText = require("react-rotating-text");
+
 export const HeroSection = () => {
   return (
     <section className="landingPage">
       <HeroContainer className="heroContainer" id="landingPage">
         <HeroBG>
           <ImageBG src={Background} />
-          {/* <ImageOverlayRadial /> */}
         </HeroBG>
 
         <HeroContent className="heroContent">
           <HeroH1>ISAK LARSSON</HeroH1>
           <HeroP>
-            An aspiring developer who likes to engage in both frontend and
-            backend development,{" "}
+            I'm an aspiring developer from Sweden who likes to engage in{" "}
           </HeroP>
-          <HeroP>allow me to </HeroP>
+          <ReactRotatingText
+            className="rotatingText"
+            items={[
+              "Front-end",
+              "Back-end",
+              "UI Design",
+              "UX Design",
+              "Machine Learning",
+            ]}
+          />
+
+          {/* <HeroP>allow me to </HeroP> */}
           <div className="buttonWrapper">
             <Link to="AboutPage" smooth className="introduce">
-              <h1 className="introduce">Introduce myself!</h1>
+              <h1 className="introduce">Get to know me!</h1>
             </Link>
             <div className="arrow">
               <Link to="AboutPage" smooth>

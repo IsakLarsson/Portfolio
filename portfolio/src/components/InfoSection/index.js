@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Selfie from "../../images/selfie-compressed.jpg";
+import Selfie from "../../images/selfie-compressed3.jpg";
 import "../InfoSection/About.css";
 import Aos from "aos";
 import "../../../node_modules/aos/dist/aos.css";
@@ -44,7 +44,7 @@ export const About = () => {
           </h1> */}
           <p className="aboutText">
             I am currently a fourth-year student at the MSc. Engineering:
-            Interaction technology and design programme at Umeå University,
+            Interaction technology & design programme at Umeå University,
             Sweden. My main interests are both front-end and back-end
             development as well as AI and UI and UX-design. I'm always striving
             to develop my skill set as much as possible. My passion lies in
