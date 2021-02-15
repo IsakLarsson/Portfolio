@@ -133,7 +133,6 @@ const Contact = () => {
             },
           }}
         ></TextField>
-
         <Button
           variant="outlined"
           className={classes.sendButton}
