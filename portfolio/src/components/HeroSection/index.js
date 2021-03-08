@@ -25,7 +25,8 @@ export const HeroSection = () => {
         <HeroContent className="heroContent">
           <HeroH1>ISAK LARSSON</HeroH1>
           <HeroP>
-            I'm an aspiring developer from Sweden who likes to engage in{" "}
+            Developer from Sweden who wants to make technology feel more human
+            and likes to engage in{" "}
           </HeroP>
           <ReactRotatingText
             className="rotatingText"
