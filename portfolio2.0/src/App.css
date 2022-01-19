@@ -1,3 +1,20 @@
 .App {
   text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4em;
+  text-align: center;
+
+  margin: 0.2rem 0.5rem;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.horizontal-margin {
+  margin: 0.5rem;
 }

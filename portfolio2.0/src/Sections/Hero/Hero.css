@@ -1,0 +1,26 @@
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(rgba(25, 41, 58, 1), rgba(25, 41, 58, 0));
+}
+
+.main-box-inner {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.upper-content {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
