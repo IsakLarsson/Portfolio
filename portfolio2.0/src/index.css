@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+html {
+}
 body {
   overflow-x: hidden;
 
@@ -6,8 +8,9 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(#0f1624, #19293a) !important;
-  height: 100vh;
+
+  height: 100%;
+  background-image: linear-gradient(#19293a, #0f1624);
 }
 
 code {

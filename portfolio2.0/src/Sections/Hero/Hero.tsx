@@ -7,19 +7,20 @@ import LinkedInIcon from "../../icons/LinkedinIcon.svg";
 import GreenBlob from "../../images/blobgreen.svg";
 import RedBlob from "../../images/blobred.svg";
 import SmallBlob from "../../images/blobsupergreen.svg";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const springProps = {
     to: { opacity: 1, transform: "translatey(-30%)" },
     from: { opacity: 0, transform: "translatey(60%)" },
-    delay: 1000,
+    delay: 1500,
     config: { mass: 1, tension: 280, friction: 60 },
   };
 
   const springProps2 = {
     to: [{ opacity: 1, transform: "translatey(-30%)" }],
     from: { opacity: 0, transform: "translatey(60%)" },
-    delay: 0,
+    delay: 500,
     config: { mass: 1, tension: 280, friction: 60 },
   };
   /* const blobSpring = useSpring({
@@ -29,20 +30,33 @@ export default function Hero() {
     config: { mass: 1, tension: 280, friction: 60 },
   }); */
 
-  const firstSpring = useSpring(springProps);
-  springProps.delay = 2000;
   const secondSpring = useSpring(springProps);
   springProps.delay = 3000;
   const thirdSpring = useSpring(springProps);
   const springy = useSpring(springProps2);
+
+  const blob = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+    },
+  };
+
   return (
     <section className="hero-section">
       <div className="main-box-inner">
         {/* <animated.div style={blobSpring}>
+        </animated.div> */}
+        <motion.div
+          style={{ width: "30%", x: "200%", y: "700px" }}
+          variants={blob}
+          initial="hidden"
+          animate="show"
+        >
           <img id="green" src={GreenBlob} alt="" />
-        </animated.div>
+        </motion.div>
         <img id="red" src={SmallBlob} alt="" />
-        <img id="small" src={RedBlob} alt="" /> */}
+        <img id="small" src={RedBlob} alt="" />
       </div>
       <div className="main-box">
         <div className="main-box-content">
@@ -56,12 +70,12 @@ export default function Hero() {
           </div>
           <div>
             <animated.div style={thirdSpring}>
-              <h1>Portfolio time hihi</h1>
+              <h1>Suck my dick :)</h1>
             </animated.div>
           </div>
           <div>
             <animated.div style={thirdSpring}>
-              <h3>UI • UX • Machine Learning • Front end • Back end</h3>
+              <h4>UI • UX • Machine Learning • Front end • Back end</h4>
             </animated.div>
           </div>
           <div>
