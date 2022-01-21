@@ -19,6 +19,7 @@ h3 {
   font-size: 1.8em;
   margin-top: 0;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 h4 {
@@ -34,7 +35,39 @@ p {
   font-weight: 400;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .horizontal-margin {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.gutter {
+  gap: 1.2rem;
 }

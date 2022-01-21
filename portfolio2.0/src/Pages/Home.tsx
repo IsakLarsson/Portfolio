@@ -3,6 +3,7 @@ import Hero from "../Sections/Hero/Hero";
 import { About } from "../Sections/About/About";
 import { Projects } from "../Sections/Projects/Projects";
 import Waves from "../images/Waves.png";
+import { Experience } from "./../Sections/Experience/Experience";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <About />
         <Projects />
+        <Experience />
       </div>
       <img
         style={{ width: "100%" }}
