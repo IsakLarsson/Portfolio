@@ -70,7 +70,7 @@ export default function Hero() {
           </div>
           <div>
             <animated.div style={thirdSpring}>
-              <h1>Welcome to my portfolio</h1>
+              <h1>Welcome to my portfolio!</h1>
             </animated.div>
           </div>
           <div>
