@@ -1,7 +1,7 @@
 .header {
   z-index: 10;
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   padding: 3rem;
 }
 
