@@ -13,6 +13,7 @@
   align-items: flex-start;
   width: 80%;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -66,7 +67,7 @@
   align-items: flex-end;
 }
 
-.bottom-div p {
+.bottom-div a {
   margin: 1rem 0 -5px 0;
   font-weight: 500;
 }
@@ -81,4 +82,38 @@
 .tools img {
   width: 25px;
   height: 25px;
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #9bb4ec;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
 }

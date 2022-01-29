@@ -1,0 +1,15 @@
+.header {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  padding: 3rem;
+}
+
+.header h4 {
+  margin: 0 1rem;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}

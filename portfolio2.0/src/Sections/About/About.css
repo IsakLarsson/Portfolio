@@ -1,13 +1,21 @@
 .about-section {
   display: flex;
   justify-content: center;
-  height: 70vh;
+  min-height: 70vh;
 }
 
 .about-container {
-  width: 60%;
+  max-width: 60%;
   display: flex;
+  flex-wrap: 500px;
   justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .about-container {
+    max-width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .selfie {

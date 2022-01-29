@@ -1,6 +1,7 @@
 import React from "react";
 import "../Sections/Projects/Projects.css";
 import { useSpring, animated } from "react-spring";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -31,7 +32,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <h3>{title}</h3>
         <p>{description}</p>
         <div className="bottom-div">
-          <p>Read more</p>
+          <Link to="#" className="hvr-underline-from-left">
+            Read more
+          </Link>
           <div className="tools">
             {tools.map((tool, index) => (
               <img src={tool} alt="." key={`tool:${index}`} />

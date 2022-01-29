@@ -20,6 +20,12 @@
   justify-content: center;
 }
 
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 button {
   background: none;
   border: none;

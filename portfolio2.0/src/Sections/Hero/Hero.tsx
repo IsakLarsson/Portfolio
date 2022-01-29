@@ -47,7 +47,7 @@ export default function Hero() {
       <div className="main-box-inner">
         {/* <animated.div style={blobSpring}>
         </animated.div> */}
-        <motion.div
+        {/* <motion.div
           style={{ width: "30%", x: "200%", y: "700px" }}
           variants={blob}
           initial="hidden"
@@ -55,8 +55,22 @@ export default function Hero() {
         >
           <img id="green" src={GreenBlob} alt="" />
         </motion.div>
-        <img id="red" src={SmallBlob} alt="" />
-        <img id="small" src={RedBlob} alt="" />
+        <motion.div
+          style={{ width: "30%", x: "200%", y: "-200px" }}
+          variants={blob}
+          initial="hidden"
+          animate="show"
+        >
+          <img id="red" src={SmallBlob} alt="" />
+        </motion.div>
+        <motion.div
+          style={{ width: "30%", x: "20%", y: "-500px" }}
+          variants={blob}
+          initial="hidden"
+          animate="show"
+        >
+          <img id="small" src={RedBlob} alt="" />
+        </motion.div> */}
       </div>
       <div className="main-box">
         <div className="main-box-content">
@@ -78,30 +92,48 @@ export default function Hero() {
               <h4>UI • UX • Machine Learning • Front end • Back end</h4>
             </animated.div>
           </div>
-          <div>
-            <animated.div style={thirdSpring}>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/IsakLarsson"
+          <div className="hero-icons">
+            <animated.div style={thirdSpring} className="hero-icons">
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 10,
+                }}
               >
-                <img
-                  src={GitHubIcon}
-                  alt="GitHub"
-                  style={{ margin: "0 0.5rem" }}
-                />
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://www.linkedin.com/in/isak-%C3%A5man-larsson-629330181/"
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/IsakLarsson"
+                >
+                  <img
+                    src={GitHubIcon}
+                    alt="GitHub"
+                    style={{ margin: "0 0.5rem" }}
+                  />
+                </a>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 10,
+                }}
               >
-                <img
-                  src={LinkedInIcon}
-                  alt="LinkedIn"
-                  style={{ margin: "0 0.5rem" }}
-                />
-              </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/isak-%C3%A5man-larsson-629330181/"
+                >
+                  <img
+                    src={LinkedInIcon}
+                    alt="LinkedIn"
+                    style={{ margin: "0 0.5rem" }}
+                  />
+                </a>
+              </motion.div>
             </animated.div>
           </div>
         </div>

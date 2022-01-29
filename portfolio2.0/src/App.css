@@ -59,6 +59,13 @@ p {
   align-items: center;
 }
 
+.flex-row-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .horizontal-margin {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
