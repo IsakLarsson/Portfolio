@@ -13,3 +13,12 @@
   color: #fff;
   text-decoration: none;
 }
+
+.header ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.header li {
+  display: inline-block;
+}

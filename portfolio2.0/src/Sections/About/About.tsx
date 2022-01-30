@@ -26,7 +26,7 @@ export const About: React.FC<AboutProps> = ({}) => {
           <h3>Tools</h3>
           <div className="tools-container">
             {tools.map((tool, index) => (
-              <div className="tool">
+              <div className="tool" key={`tool:${index}`}>
                 <img src={tool.icon} alt="icon missing" />
                 <p>{tool.name}</p>
               </div>

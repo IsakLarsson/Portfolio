@@ -7,6 +7,7 @@ import LinkedInIcon from "../../icons/LinkedinIcon.svg";
 import GreenBlob from "../../images/blobgreen.svg";
 import RedBlob from "../../images/blobred.svg";
 import SmallBlob from "../../images/blobsupergreen.svg";
+import Blobs from "../../images/blobs.png";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -71,6 +72,8 @@ export default function Hero() {
         >
           <img id="small" src={RedBlob} alt="" />
         </motion.div> */}
+
+        <img src={Blobs} alt="" />
       </div>
       <div className="main-box">
         <div className="main-box-content">
@@ -95,7 +98,7 @@ export default function Hero() {
           <div className="hero-icons">
             <animated.div style={thirdSpring} className="hero-icons">
               <motion.div
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.1 }}
                 transition={{
                   type: "spring",
                   stiffness: 200,
@@ -115,7 +118,7 @@ export default function Hero() {
                 </a>
               </motion.div>
               <motion.div
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.1 }}
                 transition={{
                   type: "spring",
                   stiffness: 200,

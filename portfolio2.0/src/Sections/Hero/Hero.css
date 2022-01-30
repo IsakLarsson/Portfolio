@@ -11,8 +11,18 @@
 
 .main-box-inner {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+
   position: absolute;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.main-box-inner img {
+  position: relative;
+  height: 100%;
+  height: clamp(100%, 70vh, 100%);
+  object-fit: cover;
 }
 
 .upper-content {
