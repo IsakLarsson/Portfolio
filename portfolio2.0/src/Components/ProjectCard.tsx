@@ -3,18 +3,14 @@ import "../Sections/Projects/Projects.css";
 import { useSpring, animated } from "react-spring";
 import { Link } from "react-router-dom";
 
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  image: string;
-  tools: string[];
-}
+import { ProjectInterface } from "./ProjectList"; //creates dependency but it doesnt matter here
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({
+export const ProjectCard: React.FC<ProjectInterface> = ({
   title,
   description,
   image,
   tools,
+  code,
 }) => {
   const [{ y }, set] = useSpring(() => ({ y: 0 }));
 
@@ -35,6 +31,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           <Link to="#" className="hvr-underline-from-left">
             Read more
           </Link>
+          {code ? (
+            <a href={code} target="_blank" className="hvr-underline-from-left">
+              {" "}
+              View code
+            </a>
+          ) : (
+            <></>
+          )}
+
           <div className="tools">
             {tools.map((tool, index) => (
               <img src={tool} alt="." key={`tool:${index}`} />

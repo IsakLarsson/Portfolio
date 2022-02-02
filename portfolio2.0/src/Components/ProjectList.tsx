@@ -14,20 +14,23 @@ import Figma from "../icons/smallicons/Figma-logo.svg";
 
 interface ProjectListProps {}
 
+export interface ProjectInterface {
+  title: string;
+  description: string;
+  image: string;
+  tools: string[];
+  code?: string;
+}
+
 export const ProjectList: React.FC<ProjectListProps> = ({}) => {
-  interface Project {
-    title: string;
-    description: string;
-    image: string;
-    tools: string[];
-  }
-  const projectList: Project[] = [
+  const projectList: ProjectInterface[] = [
     {
       title: "GAN Art",
       description:
         "A deeplearning project where I researched the possibility of training a neural network to generate artworks on its own. ",
       image: GAN,
       tools: [Python, Tensorflow],
+      code: "https://www.kaggle.com/isaklarsson/gan-art-generator",
     },
     {
       title: "360° Feedback",
