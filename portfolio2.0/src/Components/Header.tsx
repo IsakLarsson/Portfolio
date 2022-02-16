@@ -62,7 +62,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
               whileHover={springValues[0]}
               transition={springValues[1]}
             >
-              <Link to="projects">
+              <Link to="project">
                 <h4>Projects</h4>
               </Link>
             </motion.div>

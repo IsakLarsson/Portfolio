@@ -32,8 +32,12 @@ export const ProjectCard: React.FC<ProjectInterface> = ({
             Read more
           </Link>
           {code ? (
-            <a href={code} target="_blank" className="hvr-underline-from-left">
-              {" "}
+            <a
+              href={code}
+              rel="noreferrer"
+              target="_blank"
+              className="hvr-underline-from-left"
+            >
               View code
             </a>
           ) : (

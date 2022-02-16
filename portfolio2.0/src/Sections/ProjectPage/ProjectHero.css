@@ -1,0 +1,36 @@
+.hero {
+  height: 100vh;
+}
+
+.project-image {
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+}
+
+.project-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+
+.project-page-container h2 {
+  margin: 0.5rem 0;
+}
+
+.project-page-container h4 {
+  color: #bdbdbd;
+  margin-bottom: 0;
+}
+
+.project-page-tools {
+  color: #bdbdbd;
+}
+
+.project-inner {
+  text-align: left;
+  width: 80%;
+}

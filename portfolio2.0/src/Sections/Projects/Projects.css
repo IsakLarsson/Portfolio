@@ -21,6 +21,7 @@
   flex-direction: column;
   border-radius: 10px;
   width: 320px;
+  padding-bottom: 20px;
   background: radial-gradient(
     65.27% 211.78% at 30.83% 34.73%,
     #192839 0%,
@@ -32,6 +33,9 @@
     0px 5.75991px 10.0172px rgba(0, 0, 0, 0.04),
     0px 3.05905px 5.32008px rgba(0, 0, 0, 0.0323114),
     0px 1.27294px 2.21381px rgba(0, 0, 0, 0.0224916);
+
+  border-bottom-right-radius: 100% 4%;
+  border-bottom-left-radius: 100% 4%;
 }
 
 .card-image {
