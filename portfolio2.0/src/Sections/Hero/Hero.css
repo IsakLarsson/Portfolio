@@ -9,6 +9,12 @@
  */
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 .main-box-inner {
   width: 100vw;
   height: 100%;
@@ -16,6 +22,11 @@
   position: absolute;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+/*Really confusing naming here*/
+.main-box-content {
+  width: 80%;
 }
 
 .main-box-inner img {

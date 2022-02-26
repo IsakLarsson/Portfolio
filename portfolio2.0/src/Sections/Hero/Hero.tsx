@@ -75,70 +75,68 @@ export default function Hero() {
 
         <img src={Blobs} alt="" />
       </div>
-      <div className="main-box">
-        <div className="main-box-content">
-          <div className="upper-content">
-            <animated.div style={springy}>
-              <h1>Hi!</h1>
-            </animated.div>
-            <animated.div style={secondSpring}>
-              <h1>Im Isak</h1>
-            </animated.div>
-          </div>
-          <div>
-            <animated.div style={thirdSpring}>
-              <h1>Welcome to my portfolio!</h1>
-            </animated.div>
-          </div>
-          <div>
-            <animated.div style={thirdSpring}>
-              <h4>UI • UX • Machine Learning • Front end • Back end</h4>
-            </animated.div>
-          </div>
-          <div className="hero-icons">
-            <animated.div style={thirdSpring} className="hero-icons">
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 200,
-                  damping: 10,
-                }}
+      <div className="main-box-content">
+        <div className="upper-content">
+          <animated.div style={springy}>
+            <h1>Hi!</h1>
+          </animated.div>
+          <animated.div style={secondSpring}>
+            <h1>Im Isak</h1>
+          </animated.div>
+        </div>
+        <div>
+          <animated.div style={thirdSpring}>
+            <h1>Welcome to my portfolio!</h1>
+          </animated.div>
+        </div>
+        <div>
+          <animated.div style={thirdSpring}>
+            <h4>UI • UX • Machine Learning • Front end • Back end</h4>
+          </animated.div>
+        </div>
+        <div className="hero-icons">
+          <animated.div style={thirdSpring} className="hero-icons">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
+            >
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/IsakLarsson"
               >
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://github.com/IsakLarsson"
-                >
-                  <img
-                    src={GitHubIcon}
-                    alt="GitHub"
-                    style={{ margin: "0 0.5rem" }}
-                  />
-                </a>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 200,
-                  damping: 10,
-                }}
+                <img
+                  src={GitHubIcon}
+                  alt="GitHub"
+                  style={{ margin: "0 0.5rem" }}
+                />
+              </a>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
+            >
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/in/isak-%C3%A5man-larsson-629330181/"
               >
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  href="https://www.linkedin.com/in/isak-%C3%A5man-larsson-629330181/"
-                >
-                  <img
-                    src={LinkedInIcon}
-                    alt="LinkedIn"
-                    style={{ margin: "0 0.5rem" }}
-                  />
-                </a>
-              </motion.div>
-            </animated.div>
-          </div>
+                <img
+                  src={LinkedInIcon}
+                  alt="LinkedIn"
+                  style={{ margin: "0 0.5rem" }}
+                />
+              </a>
+            </motion.div>
+          </animated.div>
         </div>
       </div>
     </section>

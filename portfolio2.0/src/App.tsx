@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
-import { ProjectPage } from "./Pages/ProjectPage";
+import { GANPage } from "./Pages/GANPage";
 import { ProjectInterface } from "./Components/ProjectList";
 import Express from "./icons/smallicons/Express.svg";
 import Mongo from "./icons/smallicons/Mongo.svg";
@@ -23,7 +23,7 @@ const projectList: ProjectInterface[] = [
       "A deeplearning project where I researched the possibility of training a neural network to generate artworks on its own. ",
     image: GAN,
     tools: [Python, Tensorflow],
-    toolNames: "Python, Tensorflow",
+    toolNames: "Python, Keras, Tensorflow",
     code: "https://www.kaggle.com/isaklarsson/gan-art-generator",
     subject: "Deep learning",
   },
@@ -38,7 +38,7 @@ const projectList: ProjectInterface[] = [
   {
     title: "Kvitter",
     description:
-      "A concept developed during the course Hot Team at Umeå Institude of Design. Our idea was to create a concept where kids could learn about birds while simultaneously benefiting the bird-life in Umeå",
+      "A concept developed during the course Hot Team at Umeå Institude of Design. Our idea was to create a concept where kids could learn about birds while simultaneously benefiting the local bird-life of Umeå",
     image: Kvitter,
     tools: [Figma],
     toolNames: "Figma, Adobe suite",
@@ -61,7 +61,7 @@ function App() {
       <ProjectContext.Provider value={projectList}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="project" element={<ProjectPage />} />
+          <Route path="GANArt" element={<GANPage />} />
         </Routes>
       </ProjectContext.Provider>
     </div>

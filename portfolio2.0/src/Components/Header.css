@@ -5,6 +5,12 @@
   padding: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+}
+
 .header h4 {
   margin: 0 1rem;
 }

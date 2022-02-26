@@ -43,6 +43,20 @@
   margin-right: 2em;
   font-size: 12px;
 }
+
 .tool img {
   height: 55px;
+}
+
+@media screen and (max-width: 480px) {
+  .about-section {
+    margin-bottom: 70px;
+  }
+  .tool {
+    width: 40px;
+    font-size: 8px;
+  }
+  .tool img {
+    width: 40px;
+  }
 }
