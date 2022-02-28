@@ -11,6 +11,7 @@ export const Projects = () => {
   const antitdImg = require("../../images/antitd.png");
   const mottagningImg = require("../../images/mottagning.png");
   const paradoxImg = require("../../images/Paradox.jpg");
+  const daivinciImg = require("../../images/Daivinci.png");
 
   return (
     <section className="projectSection" id="ProjectsPage">
@@ -18,6 +19,13 @@ export const Projects = () => {
         <h1>These are some of my projects</h1>
       </div>
       <div className="projectList">
+        <ProjectItem
+          imagePlacement="Right"
+          header={projectData.DAIVinci.heading}
+          description={projectData.DAIVinci.desc}
+          resources={projectData.DAIVinci.resources}
+          img={daivinciImg}
+        />
         <ProjectItem
           imagePlacement="LEFT"
           header={projectData.Paradox.heading}

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Selfie from "../../images/selfie-compressed3.jpg";
+import Selfie from "../../images/bnwcompressed.jpg";
 import "../InfoSection/About.css";
 import Aos from "aos";
 import "../../../node_modules/aos/dist/aos.css";
@@ -43,7 +43,7 @@ export const About = () => {
             Im Isak
           </h1> */}
           <p className="aboutText">
-            I am currently a fourth-year student at the MSc. Engineering:
+            I am currently a fifth-year student at the MSc. Engineering:
             Interaction technology & design programme at Umeå University,
             Sweden. My main interests are both front-end and back-end
             development as well as AI and UI and UX-design. I'm always striving
@@ -95,22 +95,22 @@ export const About = () => {
           <div className="skillIcons">
             {[
               { title: "ReactJS", img: ReactLogo },
-              { title: "MongoDB", img: MongoLogo },
-              { title: "Express", img: ExpressLogo },
+              { title: "JavaScript", img: JavaScriptLogo },
               { title: "Python", img: PythonLogo },
               { title: "Java", img: JavaLogo },
               { title: "HTML5", img: HtmlLogo },
               { title: "CSS3", img: Css },
-              { title: "Bootstrap", img: BootstrapLogo },
-              { title: "JavaScript", img: JavaScriptLogo },
               { title: "NodeJS", img: NodeJsLogo },
+              { title: "MySQL", img: SqlLogo },
+              { title: "MongoDB", img: MongoLogo },
               { title: "C99", img: Clogo },
               { title: "C#", img: CsharpLogo },
-              { title: "MySQL", img: SqlLogo },
+              { title: "Express", img: ExpressLogo },
+              { title: "Bootstrap", img: BootstrapLogo },
               { title: "MaterialUI", img: MaterialUI },
+              { title: "Figma", img: Figma },
               { title: "Adobe XD", img: XD },
               { title: "Illustrator", img: Illustrator },
-              { title: "Figma", img: Figma },
             ].map((skill) => (
               <div className="skillIcon">
                 <img src={skill.img} alt="icon missing"></img>
