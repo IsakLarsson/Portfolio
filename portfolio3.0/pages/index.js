@@ -1,22 +1,32 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
+import anime from "animejs/lib/anime.es.js";
 
 export default function Home() {
-  /*   if (typeof window !== "undefined") {
-    let columns = Math.floor(document.body.clientWidth / 50);
-    let rows = Math.floor(document.body.clientHeight / 50);
-  } */
   const hasWindow = typeof window !== "undefined";
+
+  const [columns, setColumns] = useState(0);
+  const [rows, setRows] = useState(0);
 
   function getWindowHeight() {
     const height = hasWindow ? window.innerHeight : null;
     return height;
   }
 
-  const [columns, setColumns] = useState(0);
-  const [rows, setRows] = useState(0);
-
+  const colors = ["rgb(229, 57, 54)", "rgb(34, 230,84", "rgb(69,69,69"];
+  let count = -1;
+  const handleClick = (event, index) => {
+    count = count + 1;
+    anime({
+      targets: "span",
+      backgroundColor: [colors[count % (colors.length - 1)]],
+      delay: anime.stagger(50, {
+        grid: [columns, rows],
+        from: index,
+      }),
+    });
+  };
   let tiles = Array.from(Array(rows * columns));
   useEffect(() => {
     if (hasWindow) {
@@ -33,16 +43,14 @@ export default function Home() {
     }
   });
 
-  /*   useEffect(() => {
-    setColumns(Math.floor(document.body.clientWidth / 50));
-
-    setRows(Math.floor(document.body.clientHeight / 50));
-  }, []); */
-
   return (
     <div id={styles.tiles}>
       {tiles.map((tile, index) => (
-        <div className={styles.tile} key={index}></div>
+        <span
+          onClick={(event) => handleClick(event, index)}
+          className={styles.tile}
+          key={index}
+        ></span>
       ))}
     </div>
   );
