@@ -24,8 +24,9 @@
 .front {
   position: absolute;
   z-index: 100;
-  /*   width: 100vw;
-  height: 100vh; */
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
 }
 #tiles {
   position: absolute;

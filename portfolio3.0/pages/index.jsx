@@ -1,6 +1,13 @@
 import anime from "animejs/lib/anime.js";
+import { Center } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
+
+const projects = [
+  "This would be my first project info board",
+  "This is my second project hehe",
+  "as well as this one",
+];
 
 export default function Home() {
   const hasWindow = typeof window !== "undefined";
@@ -53,9 +60,9 @@ export default function Home() {
 
   return (
     <div className="wrapper">
-      <div className={styles.behind}>
+      <Center className={styles.behind}>
         <h1>Hi Im Isak, frontend Master</h1>
-      </div>
+      </Center>
       <div id={styles.tiles}>
         {tiles.map((tile, index) => (
           <span
