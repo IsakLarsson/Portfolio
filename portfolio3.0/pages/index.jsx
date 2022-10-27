@@ -8,7 +8,8 @@ export default function Home() {
 
   const [columns, setColumns] = useState(0);
   const [rows, setRows] = useState(0);
-
+  const [toggled, setToggled] = useState(true);
+  const [count, setCount] = useState(-1);
   function getWindowHeight() {
     const height = hasWindow ? window.innerHeight : null;
     return height;
@@ -20,12 +21,12 @@ export default function Home() {
     "rgb(255, 183, 3)",
     "rgb(251, 133, 0)",
   ];
-  let count = -1;
-
   const handleClick = (event, index) => {
-    count = count + 1;
+    setCount((prevCount) => prevCount + 1);
+    setToggled(!toggled);
     anime({
       targets: "span",
+      opacity: toggled ? 0 : 1,
       backgroundColor: [colors[count % (colors.length - 1)]],
       delay: anime.stagger(50, {
         grid: [columns, rows],
@@ -45,20 +46,26 @@ export default function Home() {
           .style.setProperty("--columns", columns);
         document.getElementById(styles.tiles).style.setProperty("--rows", rows);
       }
+      handleResize();
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }
   });
 
   return (
-    <div id={styles.tiles}>
-      {tiles.map((tile, index) => (
-        <span
-          onClick={(event) => handleClick(event, index)}
-          className={styles.tile}
-          key={index}
-        ></span>
-      ))}
+    <div className="wrapper">
+      <div className={styles.behind}>
+        <h1>Hi Im Isak, frontend Master</h1>
+      </div>
+      <div id={styles.tiles}>
+        {tiles.map((tile, index) => (
+          <span
+            onClick={(event) => handleClick(event, index)}
+            className={styles.tile}
+            key={index}
+          ></span>
+        ))}
+      </div>
     </div>
   );
 }

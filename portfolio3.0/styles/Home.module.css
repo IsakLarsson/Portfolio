@@ -11,8 +11,23 @@
   justify-content: center;
   align-items: center;
 }
+.wrapper {
+  position: relative;
+}
+.behind {
+  position: absolute;
+  background: linear-gradient(to-right, #2f3e46, #2f463f);
+  width: 100vw;
+  height: 100vh;
+}
 
+.front {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
 #tiles {
+  position: absolute;
   display: grid;
   width: 100vw;
   height: 100vh;
@@ -20,8 +35,6 @@
   grid-template-rows: repeat(var(--rows), 1fr);
 }
 
-.tile {
-}
 .footer {
   display: flex;
   flex: 1;
