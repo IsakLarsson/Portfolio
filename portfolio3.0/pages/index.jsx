@@ -1,7 +1,6 @@
-import Head from "next/head";
+import anime from "animejs/lib/anime.js";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
-import anime from "animejs/lib/anime.js";
 
 export default function Home() {
   const hasWindow = typeof window !== "undefined";
@@ -17,7 +16,7 @@ export default function Home() {
 
   const colors = [
     "rgb(33, 158, 188)",
-    "rgb(2, 48, 71)",
+    "rgb(2, 48, 7)",
     "rgb(255, 183, 3)",
     "rgb(251, 133, 0)",
   ];
@@ -26,7 +25,7 @@ export default function Home() {
     setToggled(!toggled);
     anime({
       targets: "span",
-      opacity: toggled ? 0 : 1,
+      // opacity: toggled ? 0 : 1,
       backgroundColor: [colors[count % (colors.length - 1)]],
       delay: anime.stagger(50, {
         grid: [columns, rows],
