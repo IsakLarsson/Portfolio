@@ -3,6 +3,7 @@ import { Center, Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
+import About from "../sections/About";
 
 const projects = [
   "This would be my first project info board",
@@ -40,9 +41,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      console.log("hej");
-    }, 2000);
     if (hasWindow) {
       function handleResize() {
         setColumns(Math.floor(document.body.clientWidth / 50));
@@ -61,40 +59,45 @@ export default function Home() {
   const helloPhrase = ["Hello", "I'm Isak "];
 
   return (
-    <div className="wrapper">
-      <Center className={styles.front}>
-        <Flex direction={"column"} alignItems={"center"}>
-          {helloPhrase.map((word, i) => (
-            <motion.h1
-              key={i}
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                type: "spring",
-                damping: 20,
-                stiffness: 200,
-                delay: i * 2,
-              }}
-              style={{ fontSize: "5rem", margin: "0.8rem 0" }}
-            >
-              {word}
-            </motion.h1>
-          ))}
+    <main>
+      <div className={styles.main}>
+        <Center className={styles.front}>
+          <Flex direction={"column"} alignItems={"center"}>
+            {helloPhrase.map((word, i) => (
+              <motion.h1
+                key={i}
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  type: "spring",
+                  damping: 20,
+                  stiffness: 200,
+                  delay: i * 2,
+                }}
+                style={{ fontSize: "5rem", margin: "0.8rem 0" }}
+              >
+                {word}
+              </motion.h1>
+            ))}
 
-          <h1 style={{ fontSize: "3rem", color: "black" }}>
-            Welcome to my portfolio!
-          </h1>
-        </Flex>
-      </Center>
-      <div id={styles.tiles}>
-        {tiles.map((tile, index) => (
-          <span
-            onClick={(event) => handleClick(event, index)}
-            className={styles.tile}
-            key={index}
-          ></span>
-        ))}
+            <h1
+              style={{ fontSize: "3rem", color: "black", textAlign: "center" }}
+            >
+              Welcome to my portfolio!
+            </h1>
+          </Flex>
+        </Center>
+        <div id={styles.tiles}>
+          {tiles.map((tile, index) => (
+            <span
+              onClick={(event) => handleClick(event, index)}
+              className={styles.tile}
+              key={`tile${index}`}
+            ></span>
+          ))}
+        </div>
       </div>
-    </div>
+      {!toggled && <About />}
+    </main>
   );
 }

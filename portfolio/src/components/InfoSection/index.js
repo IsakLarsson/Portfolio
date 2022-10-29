@@ -43,9 +43,7 @@ export const About = () => {
             Im Isak
           </h1> */}
           <p className="aboutText">
-            I am currently a fifth-year student at the MSc. Engineering:
-            Interaction technology & design programme at Umeå University,
-            Sweden. My main interests are both front-end and back-end
+            I am currently working as a software development consultant at Netlight, Stockholm, Sweden. My main interests are both front-end and back-end
             development as well as AI and UI and UX-design. I'm always striving
             to develop my skill set as much as possible. My passion lies in
             technology, creativity, problem-solving and my drive comes from
