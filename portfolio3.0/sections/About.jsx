@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react'
+import styles from '../styles/About.module.css'
 import {
     Grid,
     Center,
@@ -11,14 +12,35 @@ import {
 } from '@chakra-ui/react'
 import { animate, motion, useTransform } from 'framer-motion'
 import { useInView } from 'framer-motion'
+import InfoSection from '../components/InfoSection'
+import ProjectCard from '../components/ProjectCard'
+
 const About = () => {
     const aboutRef = useRef(null)
     const isInView = useInView(aboutRef)
 
     const projects = [
-        'This would be my first project info board',
-        'This is my second project hehe',
-        'as well as this one',
+        {
+            title: 'Title',
+            shortDesc: 'short description',
+            longDesc:
+                'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+            role: 'Developer',
+        },
+        {
+            title: 'Title',
+            shortDesc: 'short description',
+            longDesc:
+                'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+            role: 'Developer',
+        },
+        {
+            title: 'Title',
+            shortDesc: 'short description',
+            longDesc:
+                'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+            role: 'Developer',
+        },
     ]
     useEffect(() => {
         console.log(isInView)
@@ -33,46 +55,25 @@ const About = () => {
                 direction={'column'}
                 alignItems={'center'}
             >
+                <h1>Projects</h1>
                 <Grid
-                    templateRows='repeat(2, 1fr)'
+                    width={'90%'}
+                    templateRows='repeat(3, 1fr)'
                     templateColumns='repeat(2, 1fr)'
-                    gap={4}
+                    gap={'1em'}
                 >
-                    <GridItem colSpan={2}>
-                        <h1>Projects</h1>
-                    </GridItem>
-                    <VStack>
+                    <GridItem rowSpan={2} colSpan={1}>
                         {projects.map((project) => (
-                            <GridItem
-                                rowSpan={1}
-                                colSpan={1}
-                                bg={'#FFF8F0'}
-                                borderRadius={5}
-                                w={250}
-                            >
-                                <p>some text</p>
+                            <GridItem rowSpan={1}>
+                                <ProjectCard
+                                    title={project.title}
+                                    text={project.shortDesc}
+                                />
                             </GridItem>
                         ))}
-                    </VStack>
-                    <GridItem>
-                        <VStack>
-                            <h1>Titel</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur. Nec
-                                sodales sollicitudin urna volutpat diam id
-                                viverra massa sed. Sit pellentesque porta arcu
-                                amet. Sapien ac non vel placerat nibh elit proin
-                                suspendisse aliquet. Nunc aliquet quis integer
-                                tincidunt volutpat dui ut ipsum. Auctor sed eget
-                                sed pretium nisi risus et cursus turpis. Id
-                                augue nunc elit urna. Posuere sed ac ac
-                                scelerisque et sit ipsum velit bibendum. Id
-                                cursus orci mi faucibus egestas ut turpis
-                                malesuada aenean. Mattis fermentum massa
-                                lobortis mattis odio suspendisse scelerisque.
-                                Pulvinar quam.
-                            </p>
-                        </VStack>
+                    </GridItem>
+                    <GridItem rowSpan={3} colSpan={1}>
+                        <InfoSection title={'hello'} text={'hellohello'} />
                     </GridItem>
                 </Grid>
             </Flex>

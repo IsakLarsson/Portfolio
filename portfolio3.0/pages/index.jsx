@@ -5,12 +5,6 @@ import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
 import About from '../sections/About'
 
-const projects = [
-    'This would be my first project info board',
-    'This is my second project hehe',
-    'as well as this one',
-]
-
 export default function Home() {
     const hasWindow = typeof window !== 'undefined'
     const [columns, setColumns] = useState(0)
