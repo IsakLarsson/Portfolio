@@ -1,14 +1,10 @@
+import { motion } from 'framer-motion'
 import React from 'react'
-import './Hero.css'
-import { useSpring, animated } from 'react-spring'
-import { useState } from 'react'
+import { animated, useSpring } from 'react-spring'
 import GitHubIcon from '../../icons/GitHubIcon.svg'
 import LinkedInIcon from '../../icons/LinkedinIcon.svg'
-import GreenBlob from '../../images/blobgreen.svg'
-import RedBlob from '../../images/blobred.svg'
-import SmallBlob from '../../images/blobsupergreen.svg'
 import Blobs from '../../images/blobs.png'
-import { motion } from 'framer-motion'
+import './Hero.css'
 
 export default function Hero() {
     const springProps = {
@@ -35,13 +31,6 @@ export default function Hero() {
     springProps.delay = 3000
     const thirdSpring = useSpring(springProps)
     const springy = useSpring(springProps2)
-
-    const blob = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-        },
-    }
 
     return (
         <section className='hero-section'>

@@ -1,62 +1,73 @@
 .about-section {
-  display: flex;
-  justify-content: center;
-  min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
 }
 
 .about-container {
-  max-width: 60%;
-  display: flex;
-  flex-wrap: 500px;
-  justify-content: center;
+    max-width: 60%;
+    display: flex;
+    flex-wrap: 500px;
+    justify-content: center;
 }
 @media screen and (max-width: 1440px) {
-  .about-container {
-    max-width: 80%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .selfie img {
-    width: 300px;
-  }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .selfie img {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .about-container {
+        max-width: 100%;
+    }
 }
 
 .selfie {
-  margin: 0 2rem;
+    margin: 0 2rem;
 }
 .selfie img {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .about-content {
-  text-align: left;
-  margin: 0 2rem;
+    text-align: left;
+    margin: 0 2rem;
 }
 
 .tools-container {
-  display: flex;
-  flex-wrap: wrap;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 .tool {
-  text-align: center;
-  width: 55px;
-  margin-right: 2em;
-  font-size: 12px;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    width: 55px;
+    margin-right: 2em;
+    font-size: 12px;
 }
 
 .tool img {
-  height: 55px;
+    height: 55px;
 }
 
 @media screen and (max-width: 480px) {
-  .about-section {
-    margin-bottom: 70px;
-  }
-  .tool {
-    width: 40px;
-    font-size: 8px;
-  }
-  .tool img {
-    width: 40px;
-  }
+    .about-section {
+        margin-bottom: 70px;
+    }
+    .tools-container {
+        justify-content: center;
+    }
+    .tool {
+        width: 50px;
+        font-size: 10px;
+    }
+    .tool img {
+        width: 50px;
+    }
 }
