@@ -1,9 +1,11 @@
-import { ChakraProvider, Heading } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import '@fontsource/m-plus-rounded-1c'
 import { AnimatePresence } from 'framer-motion'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import Navbar from '../components/Navbar'
+import Selfie from '../components/Selfie'
 import '../styles/globals.css'
 import theme from '../styles/theme'
 import { Layout } from './layout'
@@ -24,9 +26,8 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
+            <Navbar />
             <Layout>
-                <Heading>Heading</Heading>
                 <AnimatePresence mode="wait" initial={false}>
                     <Component {...pageProps} key={router.route} />
                 </AnimatePresence>
