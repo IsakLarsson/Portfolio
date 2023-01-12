@@ -11,8 +11,7 @@ export const Transition: React.FC<Props> = ({ children }) => {
             exit={{ y: 100, opacity: 0 }}
             transition={{
                 type: 'spring',
-                stiffness: 260,
-                damping: 50,
+                duration: 1,
             }}
         >
             {children}

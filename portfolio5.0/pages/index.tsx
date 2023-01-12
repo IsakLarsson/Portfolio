@@ -8,14 +8,15 @@ import { Transition } from '../components/Transition'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-    const router = useRouter()
     return (
         <>
             <Transition>
                 <Flex justify={'space-between'} alignItems={'center'}>
                     <Flex direction={'column'}>
-                        <Heading>Isak Larsson</Heading>
-                        <Text>Developer/Consultant/Guitar player</Text>
+                        <Heading>Hello there, I'm Isak</Heading>
+                        <Text color={'tomato'}>
+                            Developer/Consultant/Guitar player
+                        </Text>
                     </Flex>
                     <Selfie />
                 </Flex>
@@ -35,7 +36,10 @@ export default function Home() {
                     laboris sint cupidatat ullamco ut ea consectetur et est
                     culpa et culpa duis.
                 </Text>
-                <Link href={'/projects'}>Proj</Link>
+
+                <Heading variant={'underline'}>Experience</Heading>
+
+                <Heading variant={'underline'}>Education</Heading>
             </Transition>
         </>
     )

@@ -1,17 +1,26 @@
-import { Box, Container, HStack, Link, List } from '@chakra-ui/react'
-import React from 'react'
+import { HStack, Text, Link, Box, Flex, Container } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import React, { ReactNode } from 'react'
+
+const FONT_SIZE = 'l'
+
+interface NavItemProps {
+    href: string
+    children: ReactNode
+}
+const NavItem: React.FC<NavItemProps> = ({ href, children }) => (
+    <Link as={NextLink} href={href}>
+        {children}
+    </Link>
+)
 
 export default function Navbar() {
     return (
-        <Container m={'1rem 0 3rem 0'}>
-            <HStack>
-                <Link as={NextLink} href="/">
-                    Home
-                </Link>
-                <Link as={NextLink} href="/projects">
-                    Projects
-                </Link>
+        <Container maxW={'2xl'}>
+            <HStack as={'nav'}>
+                <Text fontSize={'3xl'}>Isak Larsson</Text>
+                <NavItem href="/">Home</NavItem>
+                <NavItem href="/projects">Projects</NavItem>
             </HStack>
         </Container>
     )
