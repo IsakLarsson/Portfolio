@@ -1,4 +1,5 @@
-import { Container, HStack, Link, Text } from '@chakra-ui/react'
+import { Container, HStack, Link, Text, Icon } from '@chakra-ui/react'
+import { FiGithub } from 'react-icons/fi'
 import NextLink from 'next/link'
 import { Router } from 'next/router'
 import React, { ReactNode } from 'react'
@@ -44,6 +45,9 @@ const Navbar: React.FC<Props> = ({ router }) => {
                 <NavItem currentPath={router.pathname} href="/projects">
                     Projects
                 </NavItem>
+                <Link href="https://github.com/IsakLarsson">
+                    <Icon as={FiGithub} />
+                </Link>
             </HStack>
         </Container>
     )

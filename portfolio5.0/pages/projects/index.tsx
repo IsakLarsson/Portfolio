@@ -7,15 +7,27 @@ export default function ProjectPage() {
         <Transition>
             <Heading variant={'underline'}>Projects</Heading>
             <SimpleGrid columns={[1, 2]} spacing={10}>
-                <ProjectGridItem src="images/GAN.png" title="Paradox">
+                <ProjectGridItem
+                    src="images/GAN.png"
+                    title="Paradox"
+                    href="/ganart"
+                >
                     Lorem ipsum dolor sit amet, qui minim labore adipisicing
                     minim sint cillum sint consectetur cupidatat.
                 </ProjectGridItem>
-                <ProjectGridItem src="/images/Paradox.jpg" title="Paradox">
+                <ProjectGridItem
+                    src="/images/Paradox.jpg"
+                    title="Paradox"
+                    href="/paradox"
+                >
                     Lorem ipsum dolor sit amet, qui minim labore adipisicing
                     minim sint cillum sint consectetur cupidatat.
                 </ProjectGridItem>
-                <ProjectGridItem src="/images/netlight.png" title="Paradox">
+                <ProjectGridItem
+                    src="/images/netlight.png"
+                    title="Paradox"
+                    href="/freshman"
+                >
                     Lorem ipsum dolor sit amet, qui minim labore adipisicing
                     minim sint cillum sint consectetur cupidatat.
                 </ProjectGridItem>

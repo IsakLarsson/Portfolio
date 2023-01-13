@@ -11,7 +11,10 @@ export default function Home() {
                 <Flex justify={'space-between'} alignItems={'center'}>
                     <Flex direction={'column'}>
                         <Heading>Hello there, I'm Isak</Heading>
-                        <Tags tags={['Consultant', 'Music Lover']} />
+                        <Tags
+                            tags={['Consultant', 'Music Lover']}
+                            color="teal"
+                        />
                     </Flex>
                     <Selfie />
                 </Flex>
