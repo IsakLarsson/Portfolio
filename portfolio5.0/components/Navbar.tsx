@@ -45,9 +45,9 @@ const Navbar: React.FC<Props> = ({ router }) => {
                 <NavItem currentPath={router.pathname} href="/projects">
                     Projects
                 </NavItem>
-                <Link href="https://github.com/IsakLarsson">
+                <NextLink href="/goodbye">
                     <Icon as={FiGithub} />
-                </Link>
+                </NextLink>
             </HStack>
         </Container>
     )
