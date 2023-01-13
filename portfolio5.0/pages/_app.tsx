@@ -10,8 +10,7 @@ import '../styles/globals.css'
 import theme from '../styles/theme'
 import { Layout } from './layout'
 
-export default function App({ Component, pageProps }: AppProps) {
-    const router = useRouter()
+export default function App({ Component, pageProps, router }: AppProps) {
     return (
         <ChakraProvider theme={theme}>
             <Head>
@@ -26,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Navbar />
+            <Navbar router={router} />
             <Layout>
                 <AnimatePresence mode="wait" initial={false}>
                     <Component {...pageProps} key={router.route} />

@@ -7,7 +7,7 @@ interface Props {
 }
 export const Layout: React.FC<Props> = ({ children }) => {
     return (
-        <Container maxW={'xl'}>
+        <Container maxW={'2xl'}>
             <main className={styles.main}>{children}</main>
         </Container>
     )

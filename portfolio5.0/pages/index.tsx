@@ -1,11 +1,8 @@
-import { defineStyle, Flex, Heading, Text } from '@chakra-ui/react'
-import { Inter } from '@next/font/google'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { Flex, Heading, Text, VStack } from '@chakra-ui/react'
+import { ExperienceItem } from '../components/ExperienceItem'
 import Selfie from '../components/Selfie'
+import { Tags } from '../components/Tags'
 import { Transition } from '../components/Transition'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     return (
@@ -14,9 +11,7 @@ export default function Home() {
                 <Flex justify={'space-between'} alignItems={'center'}>
                     <Flex direction={'column'}>
                         <Heading>Hello there, I'm Isak</Heading>
-                        <Text color={'tomato'}>
-                            Developer/Consultant/Guitar player
-                        </Text>
+                        <Tags tags={['Consultant', 'Music Lover']} />
                     </Flex>
                     <Selfie />
                 </Flex>
@@ -38,8 +33,32 @@ export default function Home() {
                 </Text>
 
                 <Heading variant={'underline'}>Experience</Heading>
-
+                <VStack alignItems={'stretch'} gap={2}>
+                    <ExperienceItem
+                        src="/images/netlight.png"
+                        title="Consultant"
+                        subTitle="Netlight"
+                        period="Apr 2022 - Present"
+                    />
+                    <ExperienceItem
+                        src="/images/netlight.png"
+                        title="Frontend Developer"
+                        subTitle="Coeo"
+                        period="Jun 2021 - Jun 2022"
+                    />
+                    <ExperienceItem
+                        src="/images/uminova.png"
+                        title="Frontend Developer"
+                        subTitle="Metrium"
+                        period="Fev 2021 - Jun 2021"
+                    />
+                </VStack>
                 <Heading variant={'underline'}>Education</Heading>
+                <ExperienceItem
+                    src="/images/umu.png"
+                    title="Umeå University"
+                    subTitle="Master of science, Interaction & Design"
+                />
             </Transition>
         </>
     )
