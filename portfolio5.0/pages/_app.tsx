@@ -27,7 +27,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
             </Head>
             <Navbar router={router} />
             <Layout>
-                <AnimatePresence mode="wait" initial={false}>
+                <AnimatePresence mode="wait" initial={true}>
                     <Component {...pageProps} key={router.route} />
                 </AnimatePresence>
             </Layout>

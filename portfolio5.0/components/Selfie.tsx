@@ -6,7 +6,7 @@ export default function Selfie() {
         <Avatar
             borderColor={'whitesmoke'}
             borderWidth={'2px'}
-            size="xl"
+            size="2xl"
             src={'images/Selfie.png'}
         />
     )

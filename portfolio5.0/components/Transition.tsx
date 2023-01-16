@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
+import { nanoid } from 'nanoid'
 import React, { ReactNode } from 'react'
+import { StaggerWrapper } from './StaggerWrapper'
 interface Props {
     children: ReactNode
 }
@@ -11,10 +13,11 @@ export const Transition: React.FC<Props> = ({ children }) => {
             exit={{ x: -100, opacity: 0 }}
             transition={{
                 type: 'spring',
-                duration: 1,
+                duration: 0.8,
             }}
+            key={nanoid()}
         >
-            {children}
+            <StaggerWrapper>{children}</StaggerWrapper>
         </motion.div>
     )
 }
