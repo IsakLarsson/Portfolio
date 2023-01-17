@@ -9,7 +9,7 @@ const boxVariant = {
         opacity: 1,
         transition: {
             // when: 'beforeChildren', //use this instead of delay
-            staggerChildren: 0.1,
+            staggerChildren: 0.08,
         },
     },
 }

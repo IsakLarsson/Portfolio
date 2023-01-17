@@ -8,6 +8,7 @@ interface Props {
 export const Transition: React.FC<Props> = ({ children }) => {
     return (
         <motion.div
+            style={{ marginTop: '3rem' }}
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -100, opacity: 0 }}

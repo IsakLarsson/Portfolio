@@ -7,7 +7,7 @@ interface Props {
 }
 export const Tags: React.FC<Props> = ({ tags, color }) => {
     return (
-        <HStack>
+        <HStack pt={'0.3rem'}>
             {tags.map((text: string) => (
                 <Tag variant={'subtle'} key={`tag:${text}`} colorScheme={color}>
                     {text}

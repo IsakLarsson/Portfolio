@@ -14,7 +14,11 @@ export default function Home() {
                         <Flex direction={'column'}>
                             <Heading>Hello there, I'm Isak</Heading>
                             <Tags
-                                tags={['Consultant', 'Music Lover']}
+                                tags={[
+                                    'Developer',
+                                    'Music Lover',
+                                    'Lifting enthusiast',
+                                ]}
                                 color="teal"
                             />
                         </Flex>
@@ -23,7 +27,7 @@ export default function Home() {
                 </StaggeredItem>
                 <StaggeredItem>
                     <Heading variant="underline">About me</Heading>
-                    <Text align={'justify'}>
+                    <Text align={['initial', 'justify']}>
                         Lorem ipsum dolor sit amet, officia excepteur ex fugiat
                         reprehenderit enim labore culpa sint ad nisi Lorem
                         pariatur mollit ex esse exercitation amet. Nisi anim
@@ -54,7 +58,7 @@ export default function Home() {
                     </StaggeredItem>
                     <StaggeredItem>
                         <ExperienceItem
-                            src="/images/netlight.png"
+                            src="/images/Coeo.png"
                             title="Frontend Developer"
                             subTitle="Coeo"
                             period="Jun 2021 - Jun 2022"
@@ -65,7 +69,7 @@ export default function Home() {
                             src="/images/uminova.png"
                             title="Frontend Developer"
                             subTitle="Metrium"
-                            period="Fev 2021 - Jun 2021"
+                            period="Feb 2021 - Jun 2021"
                         />
                     </StaggeredItem>
                 </VStack>

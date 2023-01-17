@@ -15,7 +15,7 @@ export const ExperienceItem: React.FC<Props> = ({
 }) => {
     return (
         <motion.div
-            whileHover={{ x: 20 }}
+            whileHover={{ x: 10 }}
             transition={{
                 type: 'spring',
                 stiffness: 300,
@@ -28,7 +28,6 @@ export const ExperienceItem: React.FC<Props> = ({
                 justify={'space-between'}
                 alignItems={'center'}
                 p={'0 1rem 0 0'}
-                dropShadow={'lg'}
             >
                 <Flex alignItems={'center'}>
                     <Image
@@ -39,11 +38,13 @@ export const ExperienceItem: React.FC<Props> = ({
                         alt=""
                     />
                     <Flex ml={'1rem'} direction={'column'}>
-                        <Heading size={'md'}>{title}</Heading>
-                        <Text>{subTitle}</Text>
+                        <Heading size={['sm', 'md']}>{title}</Heading>
+                        <Text fontWeight={'medium'} fontSize={['sm', 'md']}>
+                            {subTitle}
+                        </Text>
                     </Flex>
                 </Flex>
-                <Text>{period}</Text>
+                <Text fontSize={['sm', 'md']}>{period}</Text>
             </Flex>
         </motion.div>
     )
