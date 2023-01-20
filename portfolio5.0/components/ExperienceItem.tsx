@@ -44,7 +44,9 @@ export const ExperienceItem: React.FC<Props> = ({
                         </Text>
                     </Flex>
                 </Flex>
-                <Text fontSize={['sm', 'md']}>{period}</Text>
+                <Text fontWeight={'medium'} fontSize={['sm', 'md']}>
+                    {period}
+                </Text>
             </Flex>
         </motion.div>
     )

@@ -1,4 +1,4 @@
-import { Container, HStack, Icon, Link, Text } from '@chakra-ui/react'
+import { HStack, Icon, Link, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import NextLink from 'next/link'
 import { Router } from 'next/router'
@@ -52,44 +52,45 @@ interface Props {
 }
 const Navbar: React.FC<Props> = ({ router }) => {
     return (
-        <Container maxW={'2xl'}>
-            <HStack
-                mb={'2rem'}
-                css={'backdrop-filter: blur(2px)'}
-                position="fixed"
-                zIndex={2}
-                as={'nav'}
-                gap={8}
-                py={'0.5rem'}
-                justifyContent={'space-between'}
-            >
-                <HStack gap={2}>
-                    <NavItem currentPath={router.pathname} href="/">
-                        Home
-                    </NavItem>
-                    <NavItem currentPath={router.pathname} href="/projects">
-                        Projects
-                    </NavItem>
-                </HStack>
-                <HStack gap={2}>
-                    <NavItem
-                        currentPath={router.pathname}
-                        href="https://github.com/IsakLarsson"
-                        external={true}
-                    >
-                        <Icon as={TfiGithub} h={30} />
-                    </NavItem>
-
-                    <NavItem
-                        currentPath={router.pathname}
-                        href="https://www.linkedin.com/in/isak-%C3%A5man-larsson-629330181/"
-                        external={true}
-                    >
-                        <Icon as={ImLinkedin2} />
-                    </NavItem>
-                </HStack>
+        <HStack
+            mb={'2rem'}
+            css={'backdrop-filter: blur(2px)'}
+            position="fixed"
+            zIndex={2}
+            as={'nav'}
+            gap={8}
+            left={'50%'}
+            width={['100vw', '100vw', '70vw']}
+            transform={'translateX(-50%)'}
+            p={'0.5rem 2rem'}
+            justifyContent={'space-between'}
+        >
+            <HStack gap={2}>
+                <NavItem currentPath={router.pathname} href="/">
+                    Home
+                </NavItem>
+                <NavItem currentPath={router.pathname} href="/projects">
+                    Projects
+                </NavItem>
             </HStack>
-        </Container>
+            <HStack gap={2}>
+                <NavItem
+                    currentPath={router.pathname}
+                    href="https://github.com/IsakLarsson"
+                    external={true}
+                >
+                    <Icon as={TfiGithub} h={30} />
+                </NavItem>
+
+                <NavItem
+                    currentPath={router.pathname}
+                    href="https://www.linkedin.com/in/isak-%C3%A5man-larsson-629330181/"
+                    external={true}
+                >
+                    <Icon as={ImLinkedin2} />
+                </NavItem>
+            </HStack>
+        </HStack>
     )
 }
 

@@ -4,20 +4,29 @@ import Selfie from '../components/Selfie'
 import { StaggeredItem } from '../components/StaggeredItem'
 import { Tags } from '../components/Tags'
 import { Transition } from '../components/Transition'
-
+import { FaGuitar } from 'react-icons/fa'
+import { IoIosFitness } from 'react-icons/io'
+import { AiOutlineCode } from 'react-icons/ai'
 export default function Home() {
     return (
         <>
             <Transition>
                 <StaggeredItem>
-                    <Flex justify={'space-between'} alignItems={'center'}>
+                    <Flex
+                        wrap={'wrap-reverse'}
+                        justify={'space-between'}
+                        alignItems={'center'}
+                    >
                         <Flex direction={'column'}>
-                            <Heading>Hello there, I'm Isak</Heading>
+                            <Heading>Hello there, I&apos;m Isak</Heading>
                             <Tags
                                 tags={[
-                                    'Developer',
-                                    'Music Lover',
-                                    'Lifting enthusiast',
+                                    { title: 'Developer', icon: AiOutlineCode },
+                                    { title: 'Music Lover', icon: FaGuitar },
+                                    {
+                                        title: 'Lifting enthusiast',
+                                        icon: IoIosFitness,
+                                    },
                                 ]}
                                 color="teal"
                             />
@@ -28,20 +37,16 @@ export default function Home() {
                 <StaggeredItem>
                     <Heading variant="underline">About me</Heading>
                     <Text align={['initial', 'justify']}>
-                        Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-                        reprehenderit enim labore culpa sint ad nisi Lorem
-                        pariatur mollit ex esse exercitation amet. Nisi anim
-                        cupidatat excepteur officia. Reprehenderit nostrud
-                        nostrud ipsum Lorem est aliquip amet voluptate voluptate
-                        dolor minim nulla est proident. Nostrud officia pariatur
-                        ut officia. Sit irure elit esse ea nulla sunt ex
-                        occaecat reprehenderit commodo officia dolor Lorem duis
-                        laboris cupidatat officia voluptate. Culpa proident
-                        adipisicing id nulla nisi laboris ex in Lorem sunt duis
-                        officia eiusmod. Aliqua reprehenderit commodo ex non
-                        excepteur duis sunt velit enim. Voluptate laboris sint
-                        cupidatat ullamco ut ea consectetur et est culpa et
-                        culpa duis.
+                        I&apos;m a developer with a passion for creating
+                        products that are both beautiful and easy to use.
+                        I&apos;m always looking to learn more about the
+                        different aspects of tech, like backend development and
+                        AI. I&apos;m also a big believer in the importance of
+                        good user experience. When I&apos;m not coding away, you
+                        can usually find me picking away on my guitar, trying
+                        out new songs and styles. I&apos;m excited to take on
+                        new projects and continue growing as a developer, and as
+                        a person. Let&apos;s build something awesome together!
                     </Text>
                 </StaggeredItem>
                 <StaggeredItem>
