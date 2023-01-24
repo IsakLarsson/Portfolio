@@ -1,5 +1,6 @@
 import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import { ProjectGridItem } from '../../components/ProjectGridItem'
+import ProjectList from '../../components/ProjectList'
 import { Transition } from '../../components/Transition'
 
 export default function ProjectPage() {
@@ -14,7 +15,8 @@ export default function ProjectPage() {
                     cillum sint consectetur cupidatat.
                 </Text>
                 <Heading variant={'underline'}>Projects</Heading>
-                <SimpleGrid columns={[1, 2]} spacing={5}>
+                <ProjectList />
+                {/* 
                     <ProjectGridItem
                         src="images/GAN.png"
                         title="DAIVinci"
@@ -39,7 +41,7 @@ export default function ProjectPage() {
                         A mobile app for helping university newcomers to settle
                         in and attend events
                     </ProjectGridItem>
-                </SimpleGrid>
+                 */}
             </Box>
         </Transition>
     )
