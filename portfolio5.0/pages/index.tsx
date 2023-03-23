@@ -23,10 +23,10 @@ export default function Home() {
                                 tags={[
                                     { title: 'Developer', icon: AiOutlineCode },
                                     { title: 'Music Lover', icon: FaGuitar },
-                                    {
+                                    /* {
                                         title: 'Lifting enthusiast',
                                         icon: IoIosFitness,
-                                    },
+                                    }, */
                                 ]}
                                 color="teal"
                             />

@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import NextLink from 'next/link'
 import { Router } from 'next/router'
 import React, { ReactNode } from 'react'
-import { ImLinkedin2 } from 'react-icons/im'
-import { TfiGithub } from 'react-icons/tfi'
+import { TfiLinkedin } from 'react-icons/tfi'
+import { FaGithub } from 'react-icons/fa'
 
 const FONT_SIZE = 'xl'
 
@@ -24,7 +24,7 @@ const NavItem: React.FC<NavItemProps> = ({
     external = external || false
 
     return (
-        <motion.div whileHover={{ y: 2 }}>
+        <motion.div style={{ height: '100%' }} whileHover={{ y: 2 }}>
             <Link
                 color={active ? 'tomato' : 'whitesmoke'}
                 _hover={{ textDecor: 'none' }}
@@ -60,9 +60,10 @@ const Navbar: React.FC<Props> = ({ router }) => {
             as={'nav'}
             gap={8}
             left={'50%'}
-            width={['100vw', '100vw', '70vw']}
+            maxW={'2xl'}
+            width={['100vw', '100vw', '2xl']}
             transform={'translateX(-50%)'}
-            p={'0.5rem 2rem'}
+            p={'0.5rem 1rem'}
             justifyContent={'space-between'}
         >
             <HStack gap={2}>
@@ -79,15 +80,14 @@ const Navbar: React.FC<Props> = ({ router }) => {
                     href="https://github.com/IsakLarsson"
                     external={true}
                 >
-                    <Icon as={TfiGithub} h={30} />
+                    <Icon as={FaGithub} />
                 </NavItem>
-
                 <NavItem
                     currentPath={router.pathname}
                     href="https://www.linkedin.com/in/isak-%C3%A5man-larsson-629330181/"
                     external={true}
                 >
-                    <Icon as={ImLinkedin2} />
+                    <Icon as={TfiLinkedin} />
                 </NavItem>
             </HStack>
         </HStack>

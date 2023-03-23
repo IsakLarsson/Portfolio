@@ -3,7 +3,7 @@ import React from 'react'
 
 type TagContent = {
     title: string
-    icon: any
+    icon?: any
 }
 interface Props {
     tags: TagContent[]
@@ -18,7 +18,8 @@ export const Tags: React.FC<Props> = ({ tags, color }) => {
                     key={`tag:${tagContent.title}`}
                     colorScheme={color}
                 >
-                    <TagLeftIcon as={tagContent.icon} />
+                    {tagContent.icon && <TagLeftIcon as={tagContent.icon} />}
+
                     <TagLabel>{tagContent.title}</TagLabel>
                 </Tag>
             ))}

@@ -1,4 +1,4 @@
-import { Box, Heading, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Heading, Text } from '@chakra-ui/react'
 import { ProjectGridItem } from '../../components/ProjectGridItem'
 import { Transition } from '../../components/Transition'
 
@@ -8,38 +8,32 @@ export default function ProjectPage() {
             <Box mt={10}>
                 <Heading>Projects</Heading>
                 <Text>
-                    Lorem ipsum dolor sit amet, qui minim labore adipisicing
-                    minim sint cillum sint consectetur cupidatat. Lorem ipsum
-                    dolor sit amet, qui minim labore adipisicing minim sint
-                    cillum sint consectetur cupidatat.
+                    These are some of my earlier projects. This page is still a
+                    work in progress and will be expanded in the near future.
                 </Text>
-                <Heading variant={'underline'}>Projects</Heading>
-                <SimpleGrid columns={[1, 2]} spacing={5}>
-                    <ProjectGridItem
-                        src="images/GAN.png"
-                        title="DAIVinci"
-                        href="/ganart"
-                    >
-                        A Deeplearning model for generating art based on the
-                        worlds greatest artworks
-                    </ProjectGridItem>
-                    <ProjectGridItem
-                        src="/images/wideparadox.svg"
-                        title="360 Feedback"
-                        href="/paradox"
-                    >
-                        An employee evaluation webapp for game dev studio
-                        Paradox Arctic
-                    </ProjectGridItem>
-                    <ProjectGridItem
-                        src="/images/freshmanwide.svg"
-                        title="Freshman app"
-                        href="/freshman"
-                    >
-                        A mobile app for helping university newcomers to settle
-                        in and attend events
-                    </ProjectGridItem>
-                </SimpleGrid>
+
+                <ProjectGridItem src="images/GAN.png" title="DAIVinci">
+                    A Deeplearning model for generating art based on the worlds
+                    greatest artworks. Although much smaller than today&apos;s
+                    DALL-E&apos;s and Stable diffusion, it managed to generate
+                    interesting results
+                </ProjectGridItem>
+                <ProjectGridItem
+                    src="/images/wideparadox.svg"
+                    title="360 Feedback"
+                >
+                    An employee evaluation webapp for game dev studio Paradox
+                    Arctic to enable a more reliable, efficient and time saving
+                    evaluation process.
+                </ProjectGridItem>
+                <ProjectGridItem
+                    src="/images/freshmanwide.svg"
+                    title="University newcomers"
+                >
+                    A mobile app for helping university newcomers to settle in
+                    with their new friends and attend events to help build
+                    social connections.
+                </ProjectGridItem>
             </Box>
         </Transition>
     )
