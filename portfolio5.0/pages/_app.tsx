@@ -6,7 +6,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import '../styles/globals.css'
 import theme from '../styles/theme'
-import { Layout } from './layout'
+import Layout from './layout'
 
 export default function App({ Component, pageProps, router }: AppProps) {
     return (
