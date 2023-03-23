@@ -53,7 +53,6 @@ interface Props {
 const Navbar: React.FC<Props> = ({ router }) => {
     return (
         <HStack
-            mb={'2rem'}
             css={'backdrop-filter: blur(2px)'}
             position="fixed"
             zIndex={2}

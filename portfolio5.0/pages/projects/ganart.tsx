@@ -29,7 +29,7 @@ export default function ProjectPage() {
                 fakes. And the circle goes on. This particular generator was
                 trained for 250 iterations, which took about 1.5 hours in total.
                 Note that this is nowhere near the size nor performance of the
-                DALL-E's and Stable Diffusion models of today.
+                DALL-E`&apos;`s and Stable Diffusion models of today.
             </Text>
             <HStack mt={'1rem'}>
                 <Image src={'/images/ganstart.jpg'} alt={''} />

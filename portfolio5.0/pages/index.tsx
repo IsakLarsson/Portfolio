@@ -14,6 +14,7 @@ export default function Home() {
                 <StaggeredItem>
                     <Flex
                         wrap={'wrap-reverse'}
+                        my={'1rem'}
                         justify={'space-between'}
                         alignItems={'center'}
                     >
